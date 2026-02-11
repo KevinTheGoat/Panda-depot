@@ -13,7 +13,10 @@
     "deliveryTime": "MON-SUN 11 a.m. - 11 p.m.",
     "description": "Wholesale Restaurant Containers & Packaging Supplies & More",
     "descriptionZh": "中日外卖餐盒&打包用品批发&其它",
-    "tagline": "Fair price, cost-effective, fast delivery, quality assurance, all products on approval."
+    "tagline": "Fair price, cost-effective, fast delivery, quality assurance, all products on approval.",
+    "taglineZh": "价格公道，物美价廉，快捷送货，品质保证，包退换。",
+    "motto": "As our logo portrays, our eyes measure the quality of our products and our ears are open to the voices of our customers. Quality is our guarantee!",
+    "welcomeZh": "以下产品均有售，欢迎旧雨新知来电或微信咨询，可来货仓自提货品"
   },
   "validPeriod": {
     "start": "2026-01-21",

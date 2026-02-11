@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import { useGsapStagger } from '../hooks/useGsap'
@@ -9,6 +10,7 @@ function slugify(name) {
 
 export default function CategoryPage() {
   const { categorySlug } = useParams()
+  const [search, setSearch] = useState('')
   const gridRef = useGsapStagger({ stagger: 0.05 })
 
   const category = catalogData.categories.find(
@@ -19,7 +21,7 @@ export default function CategoryPage() {
     return (
       <section className="pt-32 pb-20">
         <div className="container-custom text-center">
-          <Icon icon="mdi:alert-circle-outline" className="text-5xl text-panda-muted/30 mx-auto mb-4" />
+          <Icon icon="mdi:alert-circle-outline" className="text-5xl text-[#6B5D4F]/40 mx-auto mb-4" />
           <h1 className="font-heading text-display-md mb-4">Category Not Found</h1>
           <Link to="/catalog" className="btn-primary">Back to Catalog</Link>
         </div>
@@ -30,7 +32,7 @@ export default function CategoryPage() {
   return (
     <section className="pt-24 pb-16">
       <div className="container-custom">
-        <Link to="/catalog" className="inline-flex items-center gap-1 text-panda-muted text-sm mb-6 hover:text-panda-red transition-colors">
+        <Link to="/catalog" className="inline-flex items-center gap-1 text-[#6B5D4F] text-sm mb-6 hover:text-panda-red transition-colors">
           <Icon icon="mdi:arrow-left" />
           All Categories
         </Link>
@@ -39,16 +41,40 @@ export default function CategoryPage() {
           <h1 className="font-heading text-display-lg">{category.name.toUpperCase()}</h1>
         </div>
         {category.nameZh && (
-          <p className="font-chinese text-panda-gold/40 text-lg mb-2">{category.nameZh}</p>
+          <p className="font-chinese text-panda-red/40 text-lg mb-2">{category.nameZh}</p>
         )}
-        <div className="h-[1px] w-24 bg-gradient-to-r from-panda-red to-panda-gold/20 mb-4" />
-        <p className="text-panda-muted text-sm mb-10">
+        <div className="h-[1px] w-24 bg-gradient-to-r from-panda-red to-panda-red/20 mb-4" />
+        <p className="text-[#6B5D4F] text-sm mb-4">
           {category.products.length} products
-          {category.note && <span className="block mt-1 text-panda-gold text-xs">{category.note}</span>}
+          {category.note && <span className="block mt-1 text-panda-red text-xs">{category.note}</span>}
         </p>
 
+        {/* Search */}
+        <div className="relative max-w-md mb-10">
+          <Icon icon="mdi:magnify" className="absolute left-4 top-1/2 -translate-y-1/2 text-[#6B5D4F] text-xl" />
+          <input
+            type="text"
+            placeholder={`Search in ${category.name}...`}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full bg-white border border-[#E8D5BF] rounded-lg pl-12 pr-4 py-3 text-sm text-[#1A1008] placeholder:text-[#6B5D4F]/50 focus:outline-none focus:border-panda-red/50 focus:shadow-[0_0_15px_rgba(238,28,37,0.1)] transition-all"
+          />
+        </div>
+
+        {(() => {
+          const filtered = search.trim()
+            ? category.products.filter(
+                (p) =>
+                  p.name?.toLowerCase().includes(search.toLowerCase()) ||
+                  p.nameZh?.includes(search) ||
+                  p.description?.toLowerCase().includes(search.toLowerCase())
+              )
+            : category.products
+
+          return (
+            <>
         <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {category.products.map((product) => (
+          {filtered.map((product) => (
             <div
               key={product.id}
               data-animate
@@ -112,6 +138,16 @@ export default function CategoryPage() {
             </div>
           ))}
         </div>
+
+        {filtered.length === 0 && (
+          <div className="text-center py-20">
+            <Icon icon="mdi:magnify-close" className="text-5xl text-[#6B5D4F]/40 mx-auto mb-4" />
+            <p className="text-[#6B5D4F]">No products match "{search}"</p>
+          </div>
+        )}
+            </>
+          )
+        })()}
       </div>
     </section>
   )

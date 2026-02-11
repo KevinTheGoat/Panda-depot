@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Icon } from '@iconify/react'
+import pandaLogo from '../assets/images/Panda Logo.svg'
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -27,8 +28,8 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-panda-black/95 backdrop-blur-xl border-b border-panda-red/20'
-          : 'bg-transparent'
+          ? 'bg-[#0C0A08]/95 backdrop-blur-xl border-b border-panda-red/20'
+          : 'bg-[#0C0A08]/80 backdrop-blur-md'
       }`}
     >
       {/* Thin gold accent line at very top */}
@@ -36,17 +37,12 @@ export default function Navbar() {
 
       <div className="container-custom flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-3">
-          {/* Small lantern decoration */}
-          <div className="hidden md:flex items-center gap-2">
-            <div className="lantern animate-lantern-sway" style={{ width: 16, height: 20 }} />
+          <div className="bg-panda-cream rounded-lg p-1">
+            <img src={pandaLogo} alt="Panda Depot" className="h-9 md:h-12 w-auto" />
           </div>
-          <div className="flex flex-col leading-none">
-            <span className="text-panda-red font-heading text-2xl md:text-3xl tracking-widest text-glow-red">
-              PANDA DEPOT
-            </span>
-            <span className="font-chinese text-panda-gold/60 text-xs tracking-wider">
-              熊猫仓库
-            </span>
+          <div className="hidden sm:block">
+            <span className="font-heading text-panda-white text-lg md:text-xl tracking-wide leading-none">PANDA DEPOT</span>
+            <span className="block font-chinese text-panda-gold/50 text-[10px]">熊猫得宝</span>
           </div>
         </Link>
 

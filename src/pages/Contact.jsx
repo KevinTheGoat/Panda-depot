@@ -12,10 +12,10 @@ export default function Contact() {
       <div ref={contentRef} className="container-custom">
         <div className="flex items-end gap-4 mb-2">
           <h1 className="font-heading text-display-lg">GET IN TOUCH</h1>
-          <span className="font-chinese text-panda-gold/40 text-2xl pb-1">联系我们</span>
+          <span className="font-chinese text-panda-red/40 text-2xl pb-1">联系我们</span>
         </div>
-        <div className="h-[1px] w-32 bg-gradient-to-r from-panda-red to-panda-gold/20 mb-4" />
-        <p className="text-panda-muted mb-12 max-w-lg">
+        <div className="h-[1px] w-32 bg-gradient-to-r from-panda-red to-panda-red/20 mb-4" />
+        <p className="text-[#6B5D4F] mb-12 max-w-lg">
           We deliver to restaurants across South Florida. Call, text, or visit our warehouse in Hialeah.
         </p>
 

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import catalogData from '../data/catalog.json'
+import pandaLogo from '../assets/images/Panda Logo.svg'
 
 const { company } = catalogData
 
@@ -15,18 +16,21 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="seal-stamp opacity-50" style={{ width: 48, height: 48, fontSize: '1rem' }}>
-                <span>熊猫</span>
+              <div className="bg-panda-cream rounded-lg p-2">
+                <img src={pandaLogo} alt="Panda Depot" className="h-12 w-auto" />
               </div>
               <div>
-                <h3 className="font-heading text-display-sm text-panda-red text-glow-red">PANDA DEPOT</h3>
-                <p className="font-chinese text-panda-gold/40 text-xs">熊猫仓库</p>
+                <span className="font-heading text-panda-white text-xl tracking-wide leading-none block">PANDA DEPOT</span>
+                <span className="font-chinese text-panda-gold/40 text-xs">熊猫得宝有限公司</span>
               </div>
             </div>
             <p className="text-panda-muted text-sm leading-relaxed">
               {company.description}
             </p>
-            <p className="font-chinese text-panda-muted/40 text-xs mt-2">{company.descriptionZh}</p>
+            <p className="font-chinese text-panda-muted/40 text-xs mt-1">{company.descriptionZh}</p>
+            <p className="text-panda-muted/60 text-xs mt-3 italic leading-relaxed">
+              {company.motto}
+            </p>
           </div>
 
           {/* Contact */}
@@ -86,7 +90,7 @@ export default function Footer() {
             <p className="text-panda-muted/50 text-xs">
               &copy; {new Date().getFullYear()} Panda Depot Inc. All rights reserved.
             </p>
-            <span className="font-chinese text-panda-gold/20 text-xs">熊猫仓库公司</span>
+            <span className="font-chinese text-panda-gold/20 text-xs">熊猫得宝有限公司</span>
           </div>
           <div className="flex gap-6">
             <Link to="/catalog" className="text-panda-muted/50 text-xs hover:text-panda-gold transition-colors">Catalog</Link>
