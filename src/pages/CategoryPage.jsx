@@ -20,7 +20,7 @@ export default function CategoryPage() {
       <section className="pt-32 pb-20">
         <div className="container-custom text-center">
           <Icon icon="mdi:alert-circle-outline" className="text-5xl text-panda-muted/30 mx-auto mb-4" />
-          <h1 className="font-display text-display-md mb-4">Category Not Found</h1>
+          <h1 className="font-heading text-display-md mb-4">Category Not Found</h1>
           <Link to="/catalog" className="btn-primary">Back to Catalog</Link>
         </div>
       </section>
@@ -35,10 +35,13 @@ export default function CategoryPage() {
           All Categories
         </Link>
 
-        <h1 className="font-display text-display-lg mb-1">{category.name.toUpperCase()}</h1>
+        <div className="flex items-end gap-4 mb-1">
+          <h1 className="font-heading text-display-lg">{category.name.toUpperCase()}</h1>
+        </div>
         {category.nameZh && (
-          <p className="text-panda-muted/50 text-lg mb-2">{category.nameZh}</p>
+          <p className="font-chinese text-panda-gold/40 text-lg mb-2">{category.nameZh}</p>
         )}
+        <div className="h-[1px] w-24 bg-gradient-to-r from-panda-red to-panda-gold/20 mb-4" />
         <p className="text-panda-muted text-sm mb-10">
           {category.products.length} products
           {category.note && <span className="block mt-1 text-panda-gold text-xs">{category.note}</span>}
@@ -57,12 +60,12 @@ export default function CategoryPage() {
                     {product.name}
                   </h3>
                   {product.nameZh && (
-                    <p className="text-panda-muted/50 text-xs mt-1">{product.nameZh}</p>
+                    <p className="font-chinese text-panda-gold/35 text-xs mt-1">{product.nameZh}</p>
                   )}
                 </div>
                 {product.price != null && (
                   <div className="text-right flex-shrink-0">
-                    <span className="text-panda-red font-bold text-xl">${product.price}</span>
+                    <span className="text-panda-red font-bold text-xl text-glow-red">${product.price}</span>
                     {product.unit && (
                       <p className="text-panda-muted/50 text-[10px]">{product.unit}</p>
                     )}
@@ -93,7 +96,7 @@ export default function CategoryPage() {
               </div>
 
               {product.deals && product.deals.length > 0 && (
-                <div className="bg-panda-gold/5 border border-panda-gold/20 rounded-lg p-3 space-y-1">
+                <div className="bg-panda-gold/5 border border-panda-gold/15 rounded-lg p-3 space-y-1">
                   {product.deals.map((deal, i) => (
                     <p key={i} className="text-xs text-panda-gold flex items-center gap-1.5">
                       <Icon icon="mdi:tag" className="text-sm flex-shrink-0" />

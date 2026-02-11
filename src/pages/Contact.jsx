@@ -10,7 +10,11 @@ export default function Contact() {
   return (
     <section className="pt-28 pb-20">
       <div ref={contentRef} className="container-custom">
-        <h1 className="font-display text-display-lg mb-2">GET IN TOUCH</h1>
+        <div className="flex items-end gap-4 mb-2">
+          <h1 className="font-heading text-display-lg">GET IN TOUCH</h1>
+          <span className="font-chinese text-panda-gold/40 text-2xl pb-1">联系我们</span>
+        </div>
+        <div className="h-[1px] w-32 bg-gradient-to-r from-panda-red to-panda-gold/20 mb-4" />
         <p className="text-panda-muted mb-12 max-w-lg">
           We deliver to restaurants across South Florida. Call, text, or visit our warehouse in Hialeah.
         </p>
@@ -19,30 +23,36 @@ export default function Contact() {
           {/* Info cards */}
           <div className="space-y-4">
             <div className="glass-card p-6 flex items-start gap-4">
-              <Icon icon="mdi:phone" className="text-2xl text-panda-red mt-1 flex-shrink-0" />
+              <div className="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+                <Icon icon="mdi:phone" className="text-lg text-panda-red" />
+              </div>
               <div>
                 <h3 className="font-semibold text-panda-white mb-1">Phone</h3>
-                <a href={`tel:${company.phone[0].replace(/-/g, '')}`} className="text-panda-muted hover:text-panda-white transition-colors block">
+                <a href={`tel:${company.phone[0].replace(/-/g, '')}`} className="text-panda-muted hover:text-panda-gold transition-colors block">
                   {company.phone[0]}
                 </a>
-                <a href={`tel:${company.phone[1].replace(/-/g, '')}`} className="text-panda-muted hover:text-panda-white transition-colors block">
+                <a href={`tel:${company.phone[1].replace(/-/g, '')}`} className="text-panda-muted hover:text-panda-gold transition-colors block">
                   {company.phone[1]}
                 </a>
               </div>
             </div>
 
             <div className="glass-card p-6 flex items-start gap-4">
-              <Icon icon="mdi:email-outline" className="text-2xl text-panda-red mt-1 flex-shrink-0" />
+              <div className="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+                <Icon icon="mdi:email-outline" className="text-lg text-panda-red" />
+              </div>
               <div>
                 <h3 className="font-semibold text-panda-white mb-1">Email</h3>
-                <a href={`mailto:${company.email}`} className="text-panda-muted hover:text-panda-white transition-colors">
+                <a href={`mailto:${company.email}`} className="text-panda-muted hover:text-panda-gold transition-colors">
                   {company.email}
                 </a>
               </div>
             </div>
 
             <div className="glass-card p-6 flex items-start gap-4">
-              <Icon icon="mdi:map-marker" className="text-2xl text-panda-red mt-1 flex-shrink-0" />
+              <div className="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+                <Icon icon="mdi:map-marker" className="text-lg text-panda-red" />
+              </div>
               <div>
                 <h3 className="font-semibold text-panda-white mb-1">Location</h3>
                 <p className="text-panda-muted">{company.address}</p>
@@ -50,7 +60,9 @@ export default function Contact() {
             </div>
 
             <div className="glass-card p-6 flex items-start gap-4">
-              <Icon icon="mdi:clock-outline" className="text-2xl text-panda-red mt-1 flex-shrink-0" />
+              <div className="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+                <Icon icon="mdi:clock-outline" className="text-lg text-panda-red" />
+              </div>
               <div>
                 <h3 className="font-semibold text-panda-white mb-1">Hours</h3>
                 <p className="text-panda-muted text-sm">{company.openingTime}</p>
@@ -59,7 +71,9 @@ export default function Contact() {
             </div>
 
             <div className="glass-card p-6 flex items-start gap-4">
-              <Icon icon="mdi:wechat" className="text-2xl text-panda-red mt-1 flex-shrink-0" />
+              <div className="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+                <Icon icon="mdi:wechat" className="text-lg text-panda-red" />
+              </div>
               <div>
                 <h3 className="font-semibold text-panda-white mb-1">WeChat / WhatsApp</h3>
                 <p className="text-panda-muted text-sm">{company.wechat}</p>

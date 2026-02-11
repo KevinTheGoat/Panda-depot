@@ -27,15 +27,27 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-panda-black/90 backdrop-blur-lg border-b border-panda-border/30'
+          ? 'bg-panda-black/95 backdrop-blur-xl border-b border-panda-red/20'
           : 'bg-transparent'
       }`}
     >
+      {/* Thin gold accent line at very top */}
+      <div className="h-[2px] bg-gradient-to-r from-transparent via-panda-gold/40 to-transparent" />
+
       <div className="container-custom flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-3">
-          <span className="text-panda-red font-display text-3xl md:text-4xl tracking-wide">
-            PANDA DEPOT
-          </span>
+          {/* Small lantern decoration */}
+          <div className="hidden md:flex items-center gap-2">
+            <div className="lantern animate-lantern-sway" style={{ width: 16, height: 20 }} />
+          </div>
+          <div className="flex flex-col leading-none">
+            <span className="text-panda-red font-heading text-2xl md:text-3xl tracking-widest text-glow-red">
+              PANDA DEPOT
+            </span>
+            <span className="font-chinese text-panda-gold/60 text-xs tracking-wider">
+              熊猫仓库
+            </span>
+          </div>
         </Link>
 
         {/* Desktop nav */}
@@ -46,7 +58,7 @@ export default function Navbar() {
               to={link.path}
               className={`accent-line text-sm font-medium uppercase tracking-wider pb-1 transition-colors ${
                 location.pathname === link.path
-                  ? 'text-panda-red'
+                  ? 'text-panda-gold'
                   : 'text-panda-muted hover:text-panda-white'
               }`}
             >
@@ -62,7 +74,7 @@ export default function Navbar() {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden text-panda-white p-2"
+          className="md:hidden text-panda-gold p-2"
         >
           <Icon icon={mobileOpen ? 'mdi:close' : 'mdi:menu'} className="text-2xl" />
         </button>
@@ -70,7 +82,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-panda-dark/95 backdrop-blur-xl border-t border-panda-border/30">
+        <div className="md:hidden bg-panda-dark/98 backdrop-blur-xl border-t border-panda-red/20">
           <div className="container-custom py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
@@ -78,7 +90,7 @@ export default function Navbar() {
                 to={link.path}
                 className={`text-lg font-medium py-2 ${
                   location.pathname === link.path
-                    ? 'text-panda-red'
+                    ? 'text-panda-gold'
                     : 'text-panda-muted'
                 }`}
               >

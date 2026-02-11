@@ -6,31 +6,43 @@ const { company } = catalogData
 
 export default function Footer() {
   return (
-    <footer className="bg-panda-dark border-t border-panda-border/30">
+    <footer className="relative bg-panda-dark border-t border-panda-red/15">
+      {/* Gold accent line */}
+      <div className="h-[1px] bg-gradient-to-r from-transparent via-panda-gold/30 to-transparent" />
+
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-display-sm text-panda-red mb-2">PANDA DEPOT</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="seal-stamp opacity-50" style={{ width: 48, height: 48, fontSize: '1rem' }}>
+                <span>熊猫</span>
+              </div>
+              <div>
+                <h3 className="font-heading text-display-sm text-panda-red text-glow-red">PANDA DEPOT</h3>
+                <p className="font-chinese text-panda-gold/40 text-xs">熊猫仓库</p>
+              </div>
+            </div>
             <p className="text-panda-muted text-sm leading-relaxed">
               {company.description}
             </p>
-            <p className="text-panda-muted/60 text-xs mt-2">{company.descriptionZh}</p>
+            <p className="font-chinese text-panda-muted/40 text-xs mt-2">{company.descriptionZh}</p>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-display text-xl text-panda-white mb-4 tracking-wide">CONTACT</h4>
+            <h4 className="font-heading text-xl text-panda-gold mb-4 tracking-wide">CONTACT</h4>
+            <p className="font-chinese text-panda-gold/30 text-xs mb-4">联系方式</p>
             <div className="space-y-3 text-sm text-panda-muted">
-              <a href={`tel:${company.phone[0].replace(/-/g, '')}`} className="flex items-center gap-3 hover:text-panda-white transition-colors">
+              <a href={`tel:${company.phone[0].replace(/-/g, '')}`} className="flex items-center gap-3 hover:text-panda-gold transition-colors">
                 <Icon icon="mdi:phone" className="text-panda-red" />
                 {company.phone[0]}
               </a>
-              <a href={`tel:${company.phone[1].replace(/-/g, '')}`} className="flex items-center gap-3 hover:text-panda-white transition-colors">
+              <a href={`tel:${company.phone[1].replace(/-/g, '')}`} className="flex items-center gap-3 hover:text-panda-gold transition-colors">
                 <Icon icon="mdi:phone" className="text-panda-red" />
                 {company.phone[1]}
               </a>
-              <a href={`mailto:${company.email}`} className="flex items-center gap-3 hover:text-panda-white transition-colors">
+              <a href={`mailto:${company.email}`} className="flex items-center gap-3 hover:text-panda-gold transition-colors">
                 <Icon icon="mdi:email-outline" className="text-panda-red" />
                 {company.email}
               </a>
@@ -43,7 +55,8 @@ export default function Footer() {
 
           {/* Hours */}
           <div>
-            <h4 className="font-display text-xl text-panda-white mb-4 tracking-wide">HOURS</h4>
+            <h4 className="font-heading text-xl text-panda-gold mb-4 tracking-wide">HOURS</h4>
+            <p className="font-chinese text-panda-gold/30 text-xs mb-4">营业时间</p>
             <div className="space-y-3 text-sm text-panda-muted">
               <div className="flex items-center gap-3">
                 <Icon icon="mdi:clock-outline" className="text-panda-red" />
@@ -68,13 +81,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-panda-border/30 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-panda-muted/50 text-xs">
-            &copy; {new Date().getFullYear()} Panda Depot Inc. All rights reserved.
-          </p>
+        <div className="border-t border-panda-red/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <p className="text-panda-muted/50 text-xs">
+              &copy; {new Date().getFullYear()} Panda Depot Inc. All rights reserved.
+            </p>
+            <span className="font-chinese text-panda-gold/20 text-xs">熊猫仓库公司</span>
+          </div>
           <div className="flex gap-6">
-            <Link to="/catalog" className="text-panda-muted/50 text-xs hover:text-panda-white transition-colors">Catalog</Link>
-            <Link to="/contact" className="text-panda-muted/50 text-xs hover:text-panda-white transition-colors">Contact</Link>
+            <Link to="/catalog" className="text-panda-muted/50 text-xs hover:text-panda-gold transition-colors">Catalog</Link>
+            <Link to="/contact" className="text-panda-muted/50 text-xs hover:text-panda-gold transition-colors">Contact</Link>
           </div>
         </div>
       </div>

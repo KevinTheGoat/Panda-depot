@@ -28,7 +28,12 @@ export default function Catalog() {
   return (
     <section className="pt-24 pb-16">
       <div className="container-custom">
-        <h1 className="font-display text-display-lg mb-2">FULL CATALOG</h1>
+        {/* Header with Chinese ornament */}
+        <div className="flex items-end gap-4 mb-2">
+          <h1 className="font-heading text-display-lg">FULL CATALOG</h1>
+          <span className="font-chinese text-panda-gold/40 text-2xl pb-1">完整目录</span>
+        </div>
+        <div className="h-[1px] w-32 bg-gradient-to-r from-panda-red to-panda-gold/20 mb-4" />
         <p className="text-panda-muted mb-8">
           {allProducts.length} products &middot; Prices valid {catalogData.validPeriod.start} to {catalogData.validPeriod.end}
         </p>
@@ -41,7 +46,7 @@ export default function Catalog() {
             placeholder="Search products, categories..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full bg-panda-dark border border-panda-border rounded-lg pl-12 pr-4 py-3 text-sm text-panda-white placeholder:text-panda-muted/50 focus:outline-none focus:border-panda-red/50 transition-colors"
+            className="w-full bg-panda-dark border border-panda-border rounded-lg pl-12 pr-4 py-3 text-sm text-panda-white placeholder:text-panda-muted/50 focus:outline-none focus:border-panda-red/50 focus:shadow-[0_0_15px_rgba(238,28,37,0.1)] transition-all"
           />
         </div>
 
@@ -58,24 +63,24 @@ export default function Catalog() {
                   {product.name}
                 </h3>
                 {product.price != null && (
-                  <span className="text-panda-red font-bold text-lg whitespace-nowrap">
+                  <span className="text-panda-red font-bold text-lg whitespace-nowrap text-glow-red">
                     ${product.price}
                   </span>
                 )}
               </div>
 
               {product.nameZh && (
-                <p className="text-panda-muted/50 text-xs">{product.nameZh}</p>
+                <p className="font-chinese text-panda-gold/35 text-xs">{product.nameZh}</p>
               )}
 
               <div className="flex flex-wrap gap-2 mt-1">
                 {product.size && (
-                  <span className="text-xs bg-panda-surface px-2 py-0.5 rounded text-panda-muted">
+                  <span className="text-xs bg-panda-surface border border-panda-border/50 px-2 py-0.5 rounded text-panda-muted">
                     {product.size}
                   </span>
                 )}
                 {product.packing && (
-                  <span className="text-xs bg-panda-surface px-2 py-0.5 rounded text-panda-muted">
+                  <span className="text-xs bg-panda-surface border border-panda-border/50 px-2 py-0.5 rounded text-panda-muted">
                     {product.packing}
                   </span>
                 )}
