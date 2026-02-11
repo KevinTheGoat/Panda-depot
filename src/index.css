@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-panda-black text-panda-white font-body antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-panda-red/30 text-panda-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-panda-dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-panda-border rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-panda-muted/50;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-36;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12;
+  }
+
+  .glass-card {
+    @apply bg-panda-dark/60 backdrop-blur-lg border border-panda-border/30 rounded-xl;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center px-8 py-3.5 font-body font-semibold text-sm uppercase tracking-wider;
+    @apply bg-panda-red text-white rounded-lg;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:bg-panda-red-dark hover:scale-[1.02];
+    @apply focus:outline-none focus:ring-2 focus:ring-panda-red/50 focus:ring-offset-2 focus:ring-offset-panda-black;
+  }
+
+  .btn-secondary {
+    @apply relative inline-flex items-center justify-center px-8 py-3.5 font-body font-semibold text-sm uppercase tracking-wider;
+    @apply bg-transparent text-panda-white border border-panda-border;
+    @apply rounded-lg transition-all duration-300 ease-out;
+    @apply hover:border-panda-red hover:text-panda-red;
+    @apply focus:outline-none focus:ring-2 focus:ring-panda-red/50;
+  }
+
+  .accent-line {
+    @apply relative;
+  }
+
+  .accent-line::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-panda-red;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .accent-line:hover::after {
+    @apply w-full;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

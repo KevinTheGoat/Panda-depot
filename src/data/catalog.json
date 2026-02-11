@@ -1,0 +1,2590 @@
+{
+  "company": {
+    "name": "Panda Depot Inc",
+    "nameZh": "熊猫得宝有限公司",
+    "brand": "Panda Brand / 熊猫牌",
+    "address": "171 SE 10 AVE, Hialeah, FL 33010",
+    "phone": ["954-554-8083", "305-322-3301"],
+    "email": "pandadepotinc@gmail.com",
+    "website": "www.pandadepotinc.com",
+    "wechat": "954-554-8083",
+    "whatsapp": true,
+    "openingTime": "MON-SUN 11 a.m. - 11 p.m.",
+    "deliveryTime": "MON-SUN 11 a.m. - 11 p.m.",
+    "description": "Wholesale Restaurant Containers & Packaging Supplies & More",
+    "descriptionZh": "中日外卖餐盒&打包用品批发&其它",
+    "tagline": "Fair price, cost-effective, fast delivery, quality assurance, all products on approval."
+  },
+  "validPeriod": {
+    "start": "2026-01-21",
+    "end": "2026-02-20"
+  },
+  "categories": [
+    {
+      "name": "Rice & Grains",
+      "nameZh": "米面类",
+      "pageRef": [2, 4],
+      "products": [
+        {
+          "id": "rice-001",
+          "name": "Panda Brand Thai Jasmine Rice",
+          "nameZh": "熊猫牌泰国茉莉香米",
+          "size": "25lb/bag",
+          "price": 25.00,
+          "unit": "per bag",
+          "deals": [
+            "Buy 5 get 1 free",
+            "Buy 10 get 2 free",
+            "Buy 20 get 5 free"
+          ],
+          "note": "Unlimited supply",
+          "pageRef": 2
+        },
+        {
+          "id": "rice-002",
+          "name": "Riceland Extra Long Grain White Rice",
+          "nameZh": "RICELAND 牌炒饭白米",
+          "size": "50lb",
+          "price": 24.00,
+          "unit": "per bag",
+          "pageRef": 4
+        },
+        {
+          "id": "rice-003",
+          "name": "Kong Moon Rice Stick",
+          "nameZh": "龙景门口排粉",
+          "size": "1oz x 60 bags",
+          "price": 35.00,
+          "unit": "per bag",
+          "pageRef": 4
+        },
+        {
+          "id": "rice-004",
+          "name": "Riceland Parboiled Rice",
+          "nameZh": "Riceland 牌炒饭黄米",
+          "size": "50lb",
+          "price": 30.00,
+          "unit": "per bag",
+          "pageRef": 4
+        },
+        {
+          "id": "rice-005",
+          "name": "Rice Stick 16oz",
+          "size": "16oz x 60 bags",
+          "price": 73.00,
+          "unit": "per case",
+          "deals": ["Buy 2 cases: $69/case"],
+          "pageRef": 4
+        },
+        {
+          "id": "rice-006",
+          "name": "Rice Stick 16oz (Kongmoon)",
+          "size": "16oz x 60 bags",
+          "price": 73.00,
+          "unit": "per case",
+          "deals": ["Buy 2 cases: $69/case"],
+          "pageRef": 4
+        },
+        {
+          "id": "rice-007",
+          "name": "Rice Stick 14.1oz",
+          "size": "14.1oz x 60 bags",
+          "price": 64.50,
+          "unit": "per case",
+          "deals": ["Buy 2 cases: $60.80/case"],
+          "pageRef": 4
+        },
+        {
+          "id": "rice-008",
+          "name": "Panda Brand Thai Hom Mali Rice",
+          "nameZh": "熊猫牌泰国茉莉香米",
+          "size": "25lb/bag",
+          "price": 25.00,
+          "unit": "per bag",
+          "deals": ["Buy 10 get 2 free", "Buy 20 get 5 free"],
+          "pageRef": 34
+        },
+        {
+          "id": "rice-009",
+          "name": "Brown Rice",
+          "nameZh": "糙米",
+          "size": "15lb/bag",
+          "price": 15.00,
+          "unit": "per bag",
+          "deals": ["Buy 15 bags: $13/bag"],
+          "pageRef": 32
+        }
+      ]
+    },
+    {
+      "name": "Sauces & Condiments",
+      "nameZh": "酱料及调味品",
+      "pageRef": [3, 10, 35, 36, 37, 47],
+      "products": [
+        {
+          "id": "sauce-001",
+          "name": "Duck Sauce (Panda Brand)",
+          "nameZh": "熊猫牌桶装酸梅酱",
+          "size": "5 gallon",
+          "price": 26.50,
+          "unit": "per bucket",
+          "pageRef": 3
+        },
+        {
+          "id": "sauce-002",
+          "name": "Fish Sauce (Squid Brand)",
+          "nameZh": "鱿鱼牌鱼露",
+          "size": "12 x 725ml/case",
+          "price": 31.00,
+          "unit": "per case",
+          "deals": ["Buy 2+ cases: $28/case"],
+          "pageRef": 10
+        },
+        {
+          "id": "sauce-003",
+          "name": "Haday Selected Oyster Flavoured Sauce",
+          "nameZh": "海天珍选蚝油",
+          "size": "6 cans/case",
+          "price": 25.00,
+          "unit": "per case",
+          "deals": ["Buy 5 get 1 free, buy 2 more get a bottle of Haday Soy Sauce"],
+          "pageRef": 35
+        },
+        {
+          "id": "sauce-004",
+          "name": "Haday Signature Oyster Flavoured Sauce",
+          "nameZh": "海天招牌蚝油",
+          "size": "6 cans/case",
+          "price": 34.50,
+          "unit": "per case",
+          "deals": ["Buy 5 get 1 free, buy 2 more get a bottle of Haday Soy Sauce"],
+          "pageRef": 35
+        },
+        {
+          "id": "sauce-005",
+          "name": "Haday Hoisin Sauce (Classic)",
+          "nameZh": "海天海鲜酱",
+          "size": "6 cans/case",
+          "price": 33.00,
+          "unit": "per case",
+          "deals": ["Buy 5 get 1 free, buy 2 more get a bottle of Haday Soy Sauce"],
+          "pageRef": 35
+        },
+        {
+          "id": "sauce-006",
+          "name": "Sriracha Hot Chili Sauce",
+          "nameZh": "sriracha 辣椒酱",
+          "size": "12 bottles/case",
+          "price": 25.00,
+          "unit": "per case",
+          "deals": ["Buy 3 cases: $20/case"],
+          "pageRef": 35
+        },
+        {
+          "id": "sauce-007",
+          "name": "Haday Choice Soy Sauce",
+          "nameZh": "海天酱油选款",
+          "size": "5 gallon/pail",
+          "price": 25.00,
+          "unit": "per pail",
+          "deals": ["Buy 3 get 1 free, buy 5 get 2 free"],
+          "pageRef": 35
+        },
+        {
+          "id": "sauce-008",
+          "name": "Haday Traditionally Brewed Sauce",
+          "nameZh": "海天传统酿造酱油",
+          "size": "5 gallon/pail",
+          "price": 34.50,
+          "unit": "per pail",
+          "deals": ["Buy 3 get 1 free, buy 5 get 2 free"],
+          "pageRef": 35
+        },
+        {
+          "id": "sauce-009",
+          "name": "Haday Mushroom Dark Soy Sauce",
+          "nameZh": "海天草菇老抽",
+          "size": "12 bottles/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 35
+        },
+        {
+          "id": "sauce-010",
+          "name": "LKK Panda Brand Oyster Sauce",
+          "nameZh": "李锦记旧庄蚝油熊猫牌特鲜蚝油",
+          "size": "6 cans/case",
+          "price": 42.00,
+          "unit": "per case",
+          "pageRef": 36
+        },
+        {
+          "id": "sauce-011",
+          "name": "LKK Chung Brand Oyster Sauce",
+          "nameZh": "李锦记中号蚝油",
+          "size": "6 cans/case",
+          "price": 28.00,
+          "unit": "per case",
+          "pageRef": 36
+        },
+        {
+          "id": "sauce-012",
+          "name": "LKK Hoisin Sauce",
+          "nameZh": "李锦记海鲜酱",
+          "size": "6 cans/case",
+          "price": 41.00,
+          "unit": "per case",
+          "pageRef": 36
+        },
+        {
+          "id": "sauce-013",
+          "name": "LKK Gold Label Soy Sauce",
+          "nameZh": "李锦记金标酱油",
+          "size": "6 cans/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 36
+        },
+        {
+          "id": "sauce-014",
+          "name": "LKK Kum Chun Mushroom Dark Soy Sauce",
+          "nameZh": "李锦记草菇老抽",
+          "size": "12 bottles/case",
+          "price": 56.00,
+          "unit": "per case",
+          "pageRef": 36
+        },
+        {
+          "id": "sauce-015",
+          "name": "LKK Soy Sauce",
+          "nameZh": "李锦记酱油",
+          "size": "5 gallon/pail",
+          "price": 30.00,
+          "unit": "per pail",
+          "pageRef": 36
+        },
+        {
+          "id": "sauce-016",
+          "name": "KC Hoisin Sauce",
+          "nameZh": "冠珍海鲜酱",
+          "size": "6 cans/case",
+          "price": 53.00,
+          "unit": "per case",
+          "pageRef": 37
+        },
+        {
+          "id": "sauce-017",
+          "name": "KC Ground Bean Sauce",
+          "nameZh": "冠珍磨豉酱",
+          "size": "6 cans/case",
+          "price": 48.00,
+          "unit": "per case",
+          "pageRef": 37
+        },
+        {
+          "id": "sauce-018",
+          "name": "KC Double Dark Soy Sauce",
+          "nameZh": "冠珍双色老抽",
+          "size": "6 cans/case",
+          "price": 41.00,
+          "unit": "per case",
+          "pageRef": 37
+        },
+        {
+          "id": "sauce-019",
+          "name": "KC Chee Hou Sauce",
+          "nameZh": "冠珍柱侯酱",
+          "size": "6 cans/case",
+          "price": 68.00,
+          "unit": "per case",
+          "pageRef": 37
+        },
+        {
+          "id": "sauce-020",
+          "name": "KC Soy Sauce",
+          "nameZh": "冠珍酱油",
+          "size": "6 cans/case",
+          "price": 53.00,
+          "unit": "per case",
+          "pageRef": 37
+        },
+        {
+          "id": "sauce-021",
+          "name": "KC Thick Soy Sauce",
+          "nameZh": "冠珍上汤老抽",
+          "size": "6 cans/case",
+          "price": 52.00,
+          "unit": "per case",
+          "pageRef": 37
+        },
+        {
+          "id": "sauce-022",
+          "name": "Amoy Gold Label Soy Sauce",
+          "nameZh": "海大金标酱油",
+          "size": "6 cans/case",
+          "price": 51.50,
+          "unit": "per case",
+          "pageRef": 37
+        },
+        {
+          "id": "sauce-023",
+          "name": "Pearl River Bridge Mushroom Dark Soy Sauce",
+          "nameZh": "珠江桥牌草菇老抽酱油",
+          "size": "12/case",
+          "price": 68.00,
+          "unit": "per case",
+          "deals": ["Buy 1 get 1 free gold foil bag, buy 2 get 1 chopstick + spoon set"],
+          "pageRef": 37
+        },
+        {
+          "id": "sauce-024",
+          "name": "KC Red Vinegar",
+          "nameZh": "冠珍大红浙醋",
+          "size": "12 x 16.9oz/case",
+          "price": 43.00,
+          "unit": "per case",
+          "pageRef": 37
+        },
+        {
+          "id": "sauce-025",
+          "name": "Fish Sauce",
+          "nameZh": "鱿鱼牌鱼露",
+          "size": "12x725ml/case",
+          "price": 35.00,
+          "unit": "per case",
+          "deals": ["Buy 3 cases: $31/case"],
+          "pageRef": 34
+        },
+        {
+          "id": "sauce-026",
+          "name": "Hunts Ketchup (Cans)",
+          "size": "6 cans/case",
+          "price": 41.50,
+          "unit": "per case",
+          "pageRef": 38
+        },
+        {
+          "id": "sauce-027",
+          "name": "Hunts Ketchup Packets",
+          "size": "1000/case",
+          "price": 53.00,
+          "unit": "per case",
+          "pageRef": 38
+        },
+        {
+          "id": "sauce-028",
+          "name": "White House Brand Apple Sauce",
+          "size": "6 cans/case",
+          "price": 46.50,
+          "unit": "per case",
+          "pageRef": 38
+        },
+        {
+          "id": "sauce-029",
+          "name": "Panda Duck Sauce Packet",
+          "nameZh": "外卖酸梅酱包",
+          "size": "per case",
+          "price": 9.25,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free", "Buy 15 get 2 free"],
+          "note": "Can mix with mustard packets as combo",
+          "pageRef": 47
+        },
+        {
+          "id": "sauce-030",
+          "name": "Panda Soy Sauce Packet",
+          "nameZh": "外卖酱油包",
+          "size": "per case",
+          "price": 6.25,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free", "Buy 15 get 2 free"],
+          "pageRef": 47
+        },
+        {
+          "id": "sauce-031",
+          "name": "Panda Mustard Packet",
+          "nameZh": "外卖芥末包",
+          "size": "per case",
+          "price": 9.25,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free", "Buy 15 get 2 free"],
+          "note": "Can mix with duck sauce packets as combo",
+          "pageRef": 47
+        },
+        {
+          "id": "sauce-032",
+          "name": "Hot Sauce Packet",
+          "nameZh": "辣酱包",
+          "size": "per case",
+          "price": 13.50,
+          "unit": "per case",
+          "pageRef": 47
+        },
+        {
+          "id": "sauce-033",
+          "name": "Diamond Red Pepper Sauce",
+          "nameZh": "钻石牌辣椒水",
+          "size": "4 x 1 gallon/case",
+          "price": 48.00,
+          "unit": "per case",
+          "pageRef": 47
+        },
+        {
+          "id": "sauce-034",
+          "name": "Duck Sauce (Fairy Maid Brand)",
+          "nameZh": "仙女牌桶装酸梅酱",
+          "size": "5 gallon",
+          "price": 26.50,
+          "unit": "per bucket",
+          "pageRef": 47
+        },
+        {
+          "id": "sauce-035",
+          "name": "Ketchup (canned)",
+          "nameZh": "番茄酱",
+          "size": "6 cans/case",
+          "price": 41.95,
+          "unit": "per case",
+          "pageRef": 41
+        }
+      ]
+    },
+    {
+      "name": "Cooking Oils & Vinegar",
+      "nameZh": "食用油及醋",
+      "pageRef": [33, 38, 39, 47],
+      "products": [
+        {
+          "id": "oil-001",
+          "name": "Rice Cooking Wine",
+          "nameZh": "白米酒",
+          "size": "4 x 1 gallon/case",
+          "price": 20.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 33
+        },
+        {
+          "id": "oil-002",
+          "name": "Shaoxing Cooking Wine",
+          "nameZh": "绍兴料酒",
+          "size": "4 x 1 gallon/case",
+          "price": 20.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 33
+        },
+        {
+          "id": "oil-003",
+          "name": "White Vinegar",
+          "nameZh": "白醋",
+          "size": "1 gallon/case",
+          "price": 11.00,
+          "unit": "per case",
+          "pageRef": 33
+        },
+        {
+          "id": "oil-004",
+          "name": "Blend of Corn Syrup & Honey",
+          "nameZh": "蜂蜜",
+          "size": "6 x 5lb/case",
+          "price": 41.50,
+          "unit": "per case",
+          "pageRef": 33
+        },
+        {
+          "id": "oil-005",
+          "name": "Nippon Brand Sesame Oil",
+          "nameZh": "大洋日本芝麻油",
+          "size": "4/case",
+          "price": 11.50,
+          "unit": "per case",
+          "pageRef": 38
+        },
+        {
+          "id": "oil-006",
+          "name": "LKK Sesame Oil",
+          "nameZh": "李锦记芝麻油",
+          "size": "10/case",
+          "price": 14.50,
+          "unit": "per case",
+          "pageRef": 38
+        },
+        {
+          "id": "oil-007",
+          "name": "Kadoya Roasted Sesame Oil",
+          "nameZh": "日本八角纯芝麻油",
+          "size": "10/case",
+          "price": 120.00,
+          "unit": "per case",
+          "pageRef": 38
+        },
+        {
+          "id": "oil-008",
+          "name": "Clear Liquid Frying Shortening",
+          "nameZh": "炸油",
+          "size": "35lb",
+          "price": 28.75,
+          "unit": "per container",
+          "pageRef": 39
+        },
+        {
+          "id": "oil-009",
+          "name": "Soybeans Oil",
+          "nameZh": "豆油",
+          "size": "35lb",
+          "price": 28.75,
+          "unit": "per container",
+          "pageRef": 39
+        },
+        {
+          "id": "oil-010",
+          "name": "Fukien Cooking Wine",
+          "nameZh": "福建料酒",
+          "size": "12 x 750ml/case",
+          "price": 43.00,
+          "unit": "per case",
+          "pageRef": 34
+        },
+        {
+          "id": "oil-011",
+          "name": "Pure Sesame Oil",
+          "nameZh": "小磨芝麻油",
+          "size": "56oz x 10 cans/case",
+          "price": 20.00,
+          "unit": "per can",
+          "pageRef": 47
+        }
+      ]
+    },
+    {
+      "name": "Food Pails (Chinese Takeout Boxes)",
+      "nameZh": "炒饭纸饭盒",
+      "pageRef": [5, 11],
+      "products": [
+        {
+          "id": "pail-001",
+          "name": "Panda 16 OZ Food Pails",
+          "nameZh": "熊猫牌16oz纸饭盒带附带铁提手",
+          "size": "16oz",
+          "packing": "500/case",
+          "price": 27.00,
+          "unit": "per case",
+          "pageRef": 5
+        },
+        {
+          "id": "pail-002",
+          "name": "Panda 26 OZ Food Pails",
+          "nameZh": "熊猫牌26oz纸饭盒带附带铁提手",
+          "size": "26oz",
+          "packing": "500/case",
+          "price": 40.00,
+          "unit": "per case",
+          "deals": ["Buy 5+ cases: $38/case"],
+          "pageRef": 5
+        },
+        {
+          "id": "pail-003",
+          "name": "Panda 32 OZ Food Pails",
+          "nameZh": "熊猫牌32oz纸饭盒",
+          "size": "32oz",
+          "packing": "500/case",
+          "price": 41.00,
+          "unit": "per case",
+          "deals": ["Buy 5+ cases: $39/case"],
+          "pageRef": 5
+        },
+        {
+          "id": "pail-004",
+          "name": "Multi-Brand 16oz Food Pails",
+          "nameZh": "16oz 饭盒 (福/熊猫/塔/Yi牌)",
+          "size": "16oz",
+          "packing": "500/case",
+          "price": 30.00,
+          "unit": "per case",
+          "deals": ["Buy 2 get 1 box steel wool", "Buy 3+ cases: $28/case"],
+          "pageRef": 11
+        },
+        {
+          "id": "pail-005",
+          "name": "Multi-Brand 26oz Food Pails",
+          "size": "26oz",
+          "packing": "500/case",
+          "price": 47.00,
+          "unit": "per case",
+          "deals": ["Buy 2 get 1 box steel wool", "Buy 3+ cases: $43/case"],
+          "pageRef": 11
+        },
+        {
+          "id": "pail-006",
+          "name": "Multi-Brand 32oz Food Pails",
+          "size": "32oz",
+          "packing": "500/case",
+          "price": 49.00,
+          "unit": "per case",
+          "deals": ["Buy 2 get 1 box steel wool", "Buy 3+ cases: $45/case"],
+          "pageRef": 11
+        },
+        {
+          "id": "pail-007",
+          "name": "64oz Food Pails",
+          "size": "64oz",
+          "packing": "200/case",
+          "price": 85.00,
+          "unit": "per case",
+          "pageRef": 11
+        },
+        {
+          "id": "pail-008",
+          "name": "Panda 85oz Food Pails (Print)",
+          "size": "85oz",
+          "packing": "300 set/case",
+          "price": null,
+          "unit": "per case",
+          "pageRef": 11
+        }
+      ]
+    },
+    {
+      "name": "Microwaveable Deli Containers (Black Base)",
+      "nameZh": "可微波餐盒",
+      "pageRef": [6, 12, 14, 17, 19],
+      "note": "Available in multiple brands: PANDA, FH, JN, YX (宇翔), Tiger. All black base with clear lid. Buy 10 cases get 1 free on select items. Buy 10 cases get 1 case or 1 bottle Shaoxing cooking wine.",
+      "products": [
+        {
+          "id": "deli-001",
+          "name": "12B / 818B (12oz)",
+          "description": "4 in by 5 in and 12 oz",
+          "packing": "150 set/case",
+          "price": 15.00,
+          "unit": "per case",
+          "brands": ["PANDA", "FH", "JN", "YX", "Tiger"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-002",
+          "name": "16B (16oz)",
+          "description": "5.25 in by 7.75 in and 16 oz",
+          "packing": "150 set/case",
+          "price": 18.00,
+          "unit": "per case",
+          "brands": ["PANDA", "FH", "JN", "YX", "Tiger"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-003",
+          "name": "124B (24oz)",
+          "description": "5 in by 7 in and 24 oz",
+          "packing": "150 set/case",
+          "price": 21.00,
+          "unit": "per case",
+          "brands": ["PANDA", "FH", "JN", "YX", "Tiger"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-004",
+          "name": "68B (25oz)",
+          "description": "6 in by 8 in and 25 oz",
+          "packing": "150 set/case",
+          "price": 20.00,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free"],
+          "brands": ["PANDA", "FH", "JN", "Tiger"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-005",
+          "name": "78B (30oz)",
+          "description": "6 in by 8 in and 30 oz",
+          "packing": "150 set/case",
+          "price": 21.00,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free"],
+          "brands": ["PANDA", "FH", "JN", "Tiger"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-006",
+          "name": "128B (28oz)",
+          "description": "6 in by 8 in and 28 oz",
+          "packing": "150 set/case",
+          "price": 24.00,
+          "unit": "per case",
+          "brands": ["PANDA", "FH", "JN"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-007",
+          "name": "132B (32oz)",
+          "description": "6 in by 8 in and 32 oz",
+          "packing": "150 set/case",
+          "price": 25.00,
+          "unit": "per case",
+          "brands": ["PANDA", "FH", "JN"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-008",
+          "name": "138B (38oz)",
+          "description": "6 in by 8 in and 38 oz",
+          "packing": "150 set/case",
+          "price": 26.00,
+          "unit": "per case",
+          "brands": ["PANDA", "FH", "JN"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-009",
+          "name": "18B (16oz Round)",
+          "description": "6 in Diameter and 16 oz",
+          "packing": "150 set/case",
+          "price": 15.00,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free"],
+          "brands": ["PANDA", "FH", "JN", "Tiger"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-010",
+          "name": "23B (24oz Round)",
+          "description": "7 in Diameter and 24 oz",
+          "packing": "150 set/case",
+          "price": 18.00,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free"],
+          "brands": ["PANDA", "FH", "JN"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-011",
+          "name": "129B (32oz)",
+          "packing": "150 set/case",
+          "price": 20.00,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free"],
+          "brands": ["PANDA", "FH", "JN"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-012",
+          "name": "48B (48oz)",
+          "description": "9 in Diameter and 48 oz",
+          "packing": "150 set/case",
+          "price": 35.00,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free"],
+          "brands": ["PANDA", "FH", "JN"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-013",
+          "name": "28B (30oz)",
+          "description": "6 in by 8 in and 30 oz",
+          "packing": "150 set/case",
+          "price": 24.00,
+          "unit": "per case",
+          "brands": ["PANDA", "FH"],
+          "pageRef": 14
+        },
+        {
+          "id": "deli-014",
+          "name": "928BB (28oz)",
+          "description": "6 in by 8 in and 28 oz",
+          "packing": "150 set/case",
+          "price": 27.50,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free"],
+          "brands": ["PANDA"],
+          "pageRef": 14
+        },
+        {
+          "id": "deli-015",
+          "name": "969B",
+          "packing": "150 set/case",
+          "price": 29.00,
+          "unit": "per case",
+          "brands": ["PANDA"],
+          "pageRef": 14
+        },
+        {
+          "id": "deli-016",
+          "name": "FH 129B",
+          "description": "150 set/case (150 套/箱)",
+          "packing": "150 set/case",
+          "price": 20.00,
+          "unit": "per case",
+          "brands": ["FH"],
+          "pageRef": 12
+        },
+        {
+          "id": "deli-017",
+          "name": "JN 128B",
+          "description": "6 in by 8 in and 28 oz",
+          "packing": "150 set/case",
+          "price": 23.50,
+          "unit": "per case",
+          "brands": ["JN"],
+          "pageRef": 19
+        },
+        {
+          "id": "deli-018",
+          "name": "JN 132B",
+          "description": "6 in by 8 in and 32 oz",
+          "packing": "150 set/case",
+          "price": 24.50,
+          "unit": "per case",
+          "brands": ["JN"],
+          "pageRef": 19
+        },
+        {
+          "id": "deli-019",
+          "name": "JN 138B",
+          "description": "6 in by 8 in and 38 oz",
+          "packing": "150 set/case",
+          "price": 25.00,
+          "unit": "per case",
+          "brands": ["JN"],
+          "pageRef": 19
+        }
+      ]
+    },
+    {
+      "name": "Soup Bowls & Containers with Lid",
+      "nameZh": "可微波汤面碗 / 汤罐及盖",
+      "pageRef": [7, 13, 15, 16, 18, 20],
+      "products": [
+        {
+          "id": "soup-001",
+          "name": "36B Soup Bowl (36oz)",
+          "packing": "150 set/case (bowl+lid)",
+          "brands": ["PANDA", "FH", "JN"],
+          "pageRef": 7
+        },
+        {
+          "id": "soup-002",
+          "name": "39B Soup Bowl (39oz)",
+          "packing": "150 set/case (bowl+lid)",
+          "brands": ["PANDA", "Tiger"],
+          "pageRef": 7
+        },
+        {
+          "id": "soup-003",
+          "name": "50B Soup Bowl (50oz)",
+          "packing": "150 set/case (bowl+lid)",
+          "brands": ["PANDA", "FH", "JN"],
+          "pageRef": 7
+        },
+        {
+          "id": "soup-004",
+          "name": "A08 Soup Bowl (8oz)",
+          "packing": "500 set/case (bowl+lid)",
+          "brands": ["JN"],
+          "pageRef": 7
+        },
+        {
+          "id": "soup-005",
+          "name": "A12 Soup Bowl (12oz)",
+          "packing": "500 set/case (bowl+lid)",
+          "brands": ["JN"],
+          "pageRef": 7
+        },
+        {
+          "id": "soup-006",
+          "name": "506 (6oz)",
+          "packing": "1000 set/case (bowl+lid)",
+          "brands": ["PANDA"],
+          "pageRef": 7
+        },
+        {
+          "id": "soup-007",
+          "name": "S10 (12oz)",
+          "packing": "1000 set/case (bowl+lid)",
+          "brands": ["PANDA"],
+          "pageRef": 7
+        },
+        {
+          "id": "soup-008",
+          "name": "Inner Tray",
+          "nameZh": "泡面隔属层",
+          "packing": "300 pcs/case",
+          "brands": ["PANDA"],
+          "pageRef": 7
+        },
+        {
+          "id": "soup-009",
+          "name": "8oz Soup Container with Lid (All Brands)",
+          "packing": "240 set/case",
+          "price": 20.00,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free"],
+          "brands": ["PANDA", "FH", "JN", "YX"],
+          "pageRef": 13
+        },
+        {
+          "id": "soup-010",
+          "name": "12oz Soup Container with Lid",
+          "packing": "240 set/case",
+          "price": 22.00,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free or 1 bottle cooking wine"],
+          "brands": ["PANDA", "FH", "JN"],
+          "pageRef": 13
+        },
+        {
+          "id": "soup-011",
+          "name": "16oz Soup Container with Lid",
+          "packing": "240 set/case",
+          "price": 22.50,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free"],
+          "brands": ["PANDA", "FH", "JN", "YX"],
+          "pageRef": 13
+        },
+        {
+          "id": "soup-012",
+          "name": "24oz Soup Container with Lid",
+          "packing": "240 set/case",
+          "price": 30.00,
+          "unit": "per case",
+          "brands": ["PANDA", "FH", "JN", "YX"],
+          "pageRef": 13
+        },
+        {
+          "id": "soup-013",
+          "name": "32oz Soup Container with Lid",
+          "packing": "240 set/case",
+          "price": 32.00,
+          "unit": "per case",
+          "deals": ["Buy 10 cases get 1 free"],
+          "brands": ["PANDA", "FH", "JN"],
+          "pageRef": 13
+        },
+        {
+          "id": "soup-014",
+          "name": "64oz Soup Container with Lid",
+          "packing": "120 set/case",
+          "price": 37.00,
+          "unit": "per case",
+          "brands": ["PANDA", "YX"],
+          "pageRef": 13
+        }
+      ]
+    },
+    {
+      "name": "Sushi Trays & Bento Boxes",
+      "nameZh": "熊猫牌寿司与分格午餐盒",
+      "pageRef": [27, 28],
+      "products": [
+        {
+          "id": "sushi-001",
+          "name": "PANDA/FH 001",
+          "description": "8.9 x 3.75",
+          "packing": "400/case",
+          "price": 38.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-002",
+          "name": "PANDA/FH 008",
+          "description": "6.5 x 4.5",
+          "packing": "400/case",
+          "price": 39.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-003",
+          "name": "PANDA/FH 010",
+          "description": "7.4 x 5.3",
+          "packing": "400/case or 1200/case",
+          "price": 43.50,
+          "priceAlt": 130.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-004",
+          "name": "PANDA/FH 015",
+          "description": "8.5 x 5.4",
+          "packing": "400/case",
+          "price": 53.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-005",
+          "name": "PANDA/FH 020",
+          "packing": "800/case",
+          "price": 135.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-006",
+          "name": "PANDA/FH 61",
+          "description": "9.5 IN Diameter",
+          "packing": "60/case",
+          "price": 40.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-007",
+          "name": "PANDA/FH 63",
+          "description": "12.75 IN Diameter",
+          "packing": "60/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-008",
+          "name": "PANDA/FH 64",
+          "description": "14.75 IN Diameter",
+          "packing": "60/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-009",
+          "name": "PANDA/FH 65",
+          "description": "14.88 IN Diameter",
+          "packing": "60/case",
+          "price": 49.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-010",
+          "name": "PANDA/FH-305",
+          "description": "9.3 x 7.5",
+          "packing": "252/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-011",
+          "name": "PANDA/FH-306",
+          "description": "10.4 x 8.1",
+          "packing": "200/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-012",
+          "name": "PANDA/FH-307",
+          "description": "10.4 x 10.4",
+          "packing": "100/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 27
+        },
+        {
+          "id": "sushi-013",
+          "name": "PANDA Sushi Rectangular Black 805/FH 505",
+          "description": "138 x 114 x 42",
+          "packing": "600 set/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 28
+        },
+        {
+          "id": "sushi-014",
+          "name": "PANDA 807/FH 507",
+          "description": "165 x 125 x 36",
+          "packing": "550 set/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 28
+        },
+        {
+          "id": "sushi-015",
+          "name": "PANDA 810/FH 510",
+          "description": "184 x 129 x 33",
+          "packing": "500 set/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 28
+        },
+        {
+          "id": "sushi-016",
+          "name": "PANDA 815/FH 515",
+          "description": "205 x 134 x 35",
+          "packing": "450 set/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 28
+        },
+        {
+          "id": "sushi-017",
+          "name": "PANDA 820/FH 520",
+          "description": "211 x 143 x 34",
+          "packing": "400 set/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 28
+        },
+        {
+          "id": "sushi-018",
+          "name": "PANDA 825/FH 525",
+          "description": "232 x 163 x 36",
+          "packing": "300 set/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 28
+        },
+        {
+          "id": "sushi-019",
+          "name": "PANDA 830/FH 530",
+          "description": "259 x 198 x 34",
+          "packing": "200 set/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 28
+        }
+      ]
+    },
+    {
+      "name": "Clear Seal Containers",
+      "nameZh": "熊猫牌可耐热透明沙拉或寿司盒",
+      "pageRef": [29],
+      "products": [
+        {
+          "id": "clear-001",
+          "name": "#C53PST1 / PANDA 553-1",
+          "description": "ClearSeal Hinged Lid, 5x5x2.7, 1 compartment",
+          "packing": "500/case",
+          "price": 48.00,
+          "unit": "per case",
+          "pageRef": 29
+        },
+        {
+          "id": "clear-002",
+          "name": "#C57PST1 / PANDA 663-1",
+          "description": "ClearSeal Hinged Lid, 6x6x3, 1 compartment",
+          "packing": "500/case",
+          "price": 55.00,
+          "unit": "per case",
+          "pageRef": 29
+        },
+        {
+          "id": "clear-003",
+          "name": "#C89PST1 / PANDA 882-1",
+          "description": "ClearSeal Hinged Lid Shallow, 8x8x2, 1 compartment",
+          "packing": "250/case",
+          "price": 52.00,
+          "unit": "per case",
+          "pageRef": 29
+        },
+        {
+          "id": "clear-004",
+          "name": "#C90PST1 / PANDA 883-1",
+          "description": "ClearSeal Hinged Lid, 8x8x3, 1 compartment",
+          "packing": "250/case",
+          "price": 48.00,
+          "unit": "per case",
+          "pageRef": 29
+        },
+        {
+          "id": "clear-005",
+          "name": "#C90PST3 / PANDA 883-3",
+          "description": "ClearSeal Hinged Lid, 8x8x3, 3 compartment",
+          "packing": "250/case",
+          "price": 48.00,
+          "unit": "per case",
+          "pageRef": 29
+        },
+        {
+          "id": "clear-006",
+          "name": "#C95PST1 / PANDA 993-1",
+          "description": "ClearSeal Hinged Lid, 9x9x3, 1 compartment",
+          "packing": "200/case",
+          "price": 52.00,
+          "unit": "per case",
+          "pageRef": 29
+        },
+        {
+          "id": "clear-007",
+          "name": "#C95PST3 / PANDA 993-3",
+          "description": "ClearSeal Hinged Lid, 9x9x3, 3 compartment",
+          "packing": "200/case",
+          "price": 52.00,
+          "unit": "per case",
+          "pageRef": 29
+        },
+        {
+          "id": "clear-008",
+          "name": "PXT#395 / PANDA 953-1",
+          "description": "ClearHinged Lid, 9x5x3, 1 compartment",
+          "packing": "250/case",
+          "price": 55.00,
+          "unit": "per case",
+          "pageRef": 29
+        }
+      ]
+    },
+    {
+      "name": "Tamper Evident Containers & Salad Bowls",
+      "nameZh": "防篡改沙拉盒与玫瑰形沙拉碗",
+      "pageRef": [30],
+      "products": [
+        {
+          "id": "tamper-001",
+          "name": "Panda 8oz Tamper Evident Container",
+          "description": "16.5x11.8x3.9cm",
+          "packing": "200/case",
+          "price": 23.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-002",
+          "name": "Panda 12oz Tamper Evident Container",
+          "description": "16.5x11.3x5.1cm",
+          "packing": "200/case",
+          "price": 26.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-003",
+          "name": "Panda 16oz Tamper Evident Container",
+          "description": "16.5x11.8x6.5cm",
+          "packing": "200/case",
+          "price": 28.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-004",
+          "name": "Panda 20oz Tamper Evident Container",
+          "packing": "200/case",
+          "price": 43.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-005",
+          "name": "Panda 24oz Tamper Evident Container",
+          "description": "18.2x14.2x5.5cm",
+          "packing": "200/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-006",
+          "name": "Panda 32oz Tamper Evident Container",
+          "description": "18.3x14.2x7.1cm",
+          "packing": "200/case",
+          "price": 45.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-007",
+          "name": "Panda 48oz Tamper Evident Container",
+          "description": "22.3x20.2x6.2cm",
+          "packing": "150/case",
+          "price": 51.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-008",
+          "name": "Panda 64oz Tamper Evident Container",
+          "description": "22.2x20.2x8.2cm",
+          "packing": "150/case",
+          "price": 61.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-009",
+          "name": "Panda 18oz Clear Plastic Salad Bowl with Lid",
+          "packing": "150/case",
+          "price": 23.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-010",
+          "name": "Panda 24oz Clear Plastic Salad Bowl with Lid",
+          "packing": "150/case",
+          "price": 23.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-011",
+          "name": "Panda 32oz Clear Plastic Salad Bowl with Lid",
+          "packing": "150/case",
+          "price": 25.00,
+          "unit": "per case",
+          "pageRef": 30
+        },
+        {
+          "id": "tamper-012",
+          "name": "Panda 48oz Clear Plastic Salad Bowl with Lid",
+          "packing": "150/case",
+          "pageRef": 30
+        }
+      ]
+    },
+    {
+      "name": "Catering Trays & Dome Lids",
+      "nameZh": "熊猫牌蛋糕/寿司盒底盘及高盖",
+      "pageRef": [31],
+      "products": [
+        {
+          "id": "cater-001",
+          "name": "PANDA 12\" PET Black Round Catering Tray",
+          "packing": "25/case",
+          "price": 28.00,
+          "unit": "per case (tray + lid)",
+          "pageRef": 31
+        },
+        {
+          "id": "cater-002",
+          "name": "PANDA 16\" PET Black Round Catering Tray",
+          "packing": "25/case",
+          "price": 48.00,
+          "unit": "per case (tray + lid)",
+          "pageRef": 31
+        },
+        {
+          "id": "cater-003",
+          "name": "PANDA 18\" PET Black Round Catering Tray",
+          "packing": "25/case",
+          "price": 62.00,
+          "unit": "per case (tray + lid)",
+          "pageRef": 31
+        }
+      ]
+    },
+    {
+      "name": "Portion Cups & Lids",
+      "nameZh": "熊猫牌酱料杯及盖",
+      "pageRef": [23],
+      "products": [
+        {
+          "id": "cup-001",
+          "name": "Panda 1 OZ Sauce Cup",
+          "packing": "2500 set/case",
+          "price": 30.00,
+          "unit": "per case",
+          "pageRef": 23
+        },
+        {
+          "id": "cup-002",
+          "name": "Panda 1.5 OZ Sauce Cup",
+          "packing": "2500 set/case",
+          "price": 45.00,
+          "unit": "per case",
+          "deals": ["2000 set: $36"],
+          "pageRef": 23
+        },
+        {
+          "id": "cup-003",
+          "name": "Panda 2 OZ Sauce Cup",
+          "packing": "2500 set/case",
+          "price": 47.00,
+          "unit": "per case",
+          "deals": ["2000 set: $38"],
+          "pageRef": 23
+        },
+        {
+          "id": "cup-004",
+          "name": "Panda 3.25 OZ Sauce Cup",
+          "packing": "2500 set/case",
+          "price": 60.00,
+          "unit": "per case",
+          "deals": ["2000 set: $48"],
+          "pageRef": 23
+        },
+        {
+          "id": "cup-005",
+          "name": "Panda 4 OZ Sauce Cup",
+          "packing": "2500 set/case",
+          "price": 65.00,
+          "unit": "per case",
+          "deals": ["2000 set: $52"],
+          "pageRef": 23
+        },
+        {
+          "id": "cup-006",
+          "name": "Panda 5.5 OZ Sauce Cup",
+          "packing": "2500 set/case",
+          "price": 75.00,
+          "unit": "per case",
+          "pageRef": 23
+        },
+        {
+          "id": "cup-007",
+          "name": "Lid for 0.5/0.75/1.25 OZ",
+          "packing": "2500/case",
+          "pageRef": 23
+        },
+        {
+          "id": "cup-008",
+          "name": "Lid for 1.5/2/2.5 OZ",
+          "packing": "2500/case",
+          "pageRef": 23
+        },
+        {
+          "id": "cup-009",
+          "name": "Lid for 3.25/4/5.5 OZ",
+          "packing": "2500/case",
+          "pageRef": 23
+        }
+      ]
+    },
+    {
+      "name": "Kraft Eco Boxes (Microwavable)",
+      "nameZh": "熊猫牌环保牛皮纸盒（可微波）",
+      "pageRef": [24],
+      "products": [
+        {
+          "id": "eco-001",
+          "name": "#1 ECO BOX",
+          "description": "4.3 x 3.5 x 2.4",
+          "packing": "450/case",
+          "price": 33.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 24
+        },
+        {
+          "id": "eco-002",
+          "name": "#2 ECO BOX",
+          "description": "7.8 x 5.5 x 1.8",
+          "packing": "200/case",
+          "price": 33.00,
+          "unit": "per case",
+          "pageRef": 24
+        },
+        {
+          "id": "eco-003",
+          "name": "#3 ECO BOX",
+          "description": "7.8 x 5.5 x 2.5",
+          "packing": "200/case",
+          "price": 36.00,
+          "unit": "per case",
+          "pageRef": 24
+        },
+        {
+          "id": "eco-004",
+          "name": "#4 ECO BOX",
+          "description": "7.8 x 5.5 x 3.5",
+          "packing": "160/case",
+          "price": 39.00,
+          "unit": "per case",
+          "pageRef": 24
+        },
+        {
+          "id": "eco-005",
+          "name": "#8 ECO BOX",
+          "description": "6 x 4 x 2.5",
+          "packing": "300/case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 24
+        }
+      ]
+    },
+    {
+      "name": "Tableware - 2.5g Medium Weight",
+      "nameZh": "熊猫牌2.5克普通餐具",
+      "pageRef": [25],
+      "products": [
+        {
+          "id": "tw-001",
+          "name": "PANDA-SSB-1000 PP Black Spoons",
+          "packing": "1000/case",
+          "price": 10.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 2 free"],
+          "pageRef": 25
+        },
+        {
+          "id": "tw-002",
+          "name": "PANDA-FKB-1000 PP Black Forks",
+          "packing": "1000/case",
+          "price": 10.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 2 free"],
+          "pageRef": 25
+        },
+        {
+          "id": "tw-003",
+          "name": "PANDA-SKB-1000 PP Black Sporks",
+          "packing": "1000/case",
+          "price": 10.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 2 free"],
+          "pageRef": 25
+        },
+        {
+          "id": "tw-004",
+          "name": "PANDA-MPPFKWW1000 PP White Forks Individually Wrapped",
+          "packing": "1000/case",
+          "price": 15.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 25
+        },
+        {
+          "id": "tw-005",
+          "name": "PANDA-MPPSSWW1000 PP White Spoons Individually Wrapped",
+          "packing": "1000/case",
+          "price": 15.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 25
+        },
+        {
+          "id": "tw-006",
+          "name": "PD-4KIT-250 PP White 4 Kit Individually Wrapped",
+          "packing": "250/case",
+          "price": 12.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 25
+        },
+        {
+          "id": "tw-007",
+          "name": "PD-4KIT-500 PP Black 4 Kit",
+          "packing": "500/case",
+          "price": 25.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 25
+        },
+        {
+          "id": "tw-008",
+          "name": "PD-6KIT-500 PP White 6 Kit Individually Wrapped",
+          "packing": "500/case",
+          "price": 25.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 25
+        }
+      ]
+    },
+    {
+      "name": "Tableware - 5g Heavy Weight",
+      "nameZh": "熊猫牌5克厚餐具",
+      "pageRef": [26],
+      "products": [
+        {
+          "id": "twh-001",
+          "name": "PANDA-HPB-FK-1000 PP Black Forks",
+          "packing": "1000/case",
+          "price": 20.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 26
+        },
+        {
+          "id": "twh-002",
+          "name": "PANDA-HPB-SS-1000 PP Black Spoons",
+          "packing": "1000/case",
+          "price": 20.00,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 26
+        },
+        {
+          "id": "twh-003",
+          "name": "PANDA-HPPFKBW1000 PP Black Forks Individually Wrapped",
+          "packing": "1000/case",
+          "price": 21.50,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 26
+        },
+        {
+          "id": "twh-004",
+          "name": "PANDA-HPPSSBW1000 PP Black Spoons Individually Wrapped",
+          "packing": "1000/case",
+          "price": 21.50,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 26
+        },
+        {
+          "id": "twh-005",
+          "name": "PANDA-HPPFKWW1000 PP White Forks Individually Wrapped",
+          "packing": "1000/case",
+          "price": 21.50,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 26
+        },
+        {
+          "id": "twh-006",
+          "name": "PANDA-HPPSSWW1000 PP White Spoons Individually Wrapped",
+          "packing": "1000/case",
+          "price": 21.50,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 26
+        },
+        {
+          "id": "twh-007",
+          "name": "PANDA-4KIT-250 PP White 4 Kit Individually Wrapped",
+          "packing": "250/case",
+          "price": 21.50,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 26
+        },
+        {
+          "id": "twh-008",
+          "name": "PANDA-HPP6KITW250 PP Black 6 Kit Individually Wrapped",
+          "packing": "250/case",
+          "price": 21.50,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 26
+        },
+        {
+          "id": "twh-009",
+          "name": "PANDA-HPP5KITW250 PP White 6 Kit Individually Wrapped",
+          "packing": "250/case",
+          "price": 21.50,
+          "unit": "per case",
+          "deals": ["Buy 10 get 1 free"],
+          "pageRef": 26
+        }
+      ]
+    },
+    {
+      "name": "Paper Bags",
+      "nameZh": "纸袋类",
+      "pageRef": [9, 21, 22],
+      "products": [
+        {
+          "id": "bag-001",
+          "name": "Small Paper Shopping Bag (Heavy Duty)",
+          "description": "10 x 5.5 x 13.25 H",
+          "packing": "250/bundle",
+          "price": 35.00,
+          "unit": "per bundle",
+          "pageRef": 21
+        },
+        {
+          "id": "bag-002",
+          "name": "Medium Paper Shopping Bag (Heavy Duty)",
+          "description": "11.22 x 4.5 x W x 12 H",
+          "packing": "250/bundle",
+          "price": 38.00,
+          "unit": "per bundle",
+          "pageRef": 21
+        },
+        {
+          "id": "bag-003",
+          "name": "Large Paper Shopping Bag (Heavy Duty)",
+          "description": "12 x 7 x 17 H",
+          "packing": "250/bundle",
+          "price": 45.00,
+          "unit": "per bundle",
+          "pageRef": 21
+        },
+        {
+          "id": "bag-004",
+          "name": "Small Paper Shopping Bag (Extra Heavy Duty)",
+          "description": "10 x 5.5 x 13 H",
+          "packing": "250/bundle",
+          "price": 35.00,
+          "unit": "per bundle",
+          "pageRef": 21
+        },
+        {
+          "id": "bag-005",
+          "name": "Medium Paper Shopping Bag (Extra Heavy Duty)",
+          "description": "10.5 x 7 x 15 H",
+          "packing": "250/bundle",
+          "price": 38.00,
+          "unit": "per bundle",
+          "pageRef": 21
+        },
+        {
+          "id": "bag-006",
+          "name": "Large Paper Shopping Bag (Extra Heavy Duty)",
+          "description": "13 x 7 x 17 H",
+          "packing": "250/bundle",
+          "price": 45.00,
+          "unit": "per bundle",
+          "pageRef": 21
+        },
+        {
+          "id": "bag-007",
+          "name": "16# Squat Grocery Bags Heavy Duty",
+          "packing": "500/bundle",
+          "price": 31.00,
+          "unit": "per bundle",
+          "deals": ["Buy 3 bundles: $28/bundle"],
+          "pageRef": 9
+        },
+        {
+          "id": "bag-008",
+          "name": "20# Squat Grocery Bags Heavy Duty",
+          "packing": "500/bundle",
+          "price": 32.00,
+          "unit": "per bundle",
+          "deals": ["Buy 3 bundles: $29/bundle"],
+          "pageRef": 9
+        },
+        {
+          "id": "bag-009",
+          "name": "25# Squat Grocery Bags Heavy Duty",
+          "packing": "500/bundle",
+          "price": 36.00,
+          "unit": "per bundle",
+          "deals": ["Buy 3 bundles: $33/bundle"],
+          "pageRef": 9
+        },
+        {
+          "id": "bag-010",
+          "name": "25# Squat Grocery Bags Extra Heavy Duty",
+          "packing": "500/bundle",
+          "price": 38.00,
+          "unit": "per bundle",
+          "deals": ["Buy 3 bundles: $35/bundle"],
+          "pageRef": 9
+        },
+        {
+          "id": "bag-011",
+          "name": "1/8 BBL 57LB Grocery Bags",
+          "packing": "500/bundle",
+          "price": 42.00,
+          "unit": "per bundle",
+          "deals": ["Buy 3 bundles: $39/bundle"],
+          "pageRef": 9
+        },
+        {
+          "id": "bag-012",
+          "name": "1/6 BBL 57# Grocery Bags",
+          "packing": "500/bundle",
+          "price": 52.00,
+          "unit": "per bundle",
+          "deals": ["Buy 3 bundles: $49/bundle"],
+          "pageRef": 9
+        },
+        {
+          "id": "bag-013",
+          "name": "Kari Out 3LB Glassine Bag",
+          "packing": "1000 pcs/box",
+          "price": 34.00,
+          "unit": "per box",
+          "deals": ["Buy 2 boxes: $32/box"],
+          "pageRef": 9
+        },
+        {
+          "id": "bag-014",
+          "name": "Kari Out 4LB Glassine Bag",
+          "packing": "1000 pcs/box",
+          "price": 44.00,
+          "unit": "per box",
+          "deals": ["Buy 2 boxes: $42/box"],
+          "pageRef": 9
+        }
+      ]
+    },
+    {
+      "name": "Glassine & Foil Bags & Plastic Wrap",
+      "nameZh": "春卷袋，排骨袋与保鲜膜",
+      "pageRef": [42],
+      "products": [
+        {
+          "id": "wrap-001",
+          "name": "Kari Out 1/2LB Glassine Bag",
+          "packing": "1000 pcs/box (12 box/case)",
+          "price": 138.00,
+          "pricePerBox": 14.00,
+          "unit": "per case",
+          "pageRef": 42
+        },
+        {
+          "id": "wrap-002",
+          "name": "Kari Out 1LB Glassine Bag",
+          "packing": "1000 pcs/box (8 box/case)",
+          "price": 128.00,
+          "pricePerBox": 17.00,
+          "unit": "per case",
+          "pageRef": 42
+        },
+        {
+          "id": "wrap-003",
+          "name": "Kari Out 2LB Glassine Bag",
+          "packing": "1000 pcs/box (6 box/case)",
+          "price": 128.00,
+          "pricePerBox": 22.00,
+          "unit": "per case",
+          "pageRef": 42
+        },
+        {
+          "id": "wrap-004",
+          "name": "Kari Out 3LB Glassine Bag",
+          "packing": "1000 pcs/box",
+          "price": 36.00,
+          "unit": "per box",
+          "deals": ["Buy 2 boxes: $34/box", "Buy 3 boxes: $32/box"],
+          "pageRef": 42
+        },
+        {
+          "id": "wrap-005",
+          "name": "Kari Out 4LB Glassine Bag",
+          "packing": "1000 pcs/box",
+          "price": 46.00,
+          "unit": "per box",
+          "deals": ["Buy 2 boxes: $44/box", "Buy 3 boxes: $42/box"],
+          "pageRef": 42
+        },
+        {
+          "id": "wrap-006",
+          "name": "Pint Foil Bag",
+          "packing": "1000/case",
+          "price": 83.00,
+          "unit": "per case",
+          "pageRef": 42
+        },
+        {
+          "id": "wrap-007",
+          "name": "Quart Foil Bag",
+          "packing": "1000/case",
+          "price": 89.00,
+          "unit": "per case",
+          "pageRef": 42
+        },
+        {
+          "id": "wrap-008",
+          "name": "Food Service Film Wrap w Cutter 12\"",
+          "description": "12\" x 2000 / 12\" x 3000 Feet",
+          "price": 18.00,
+          "unit": "per roll",
+          "pageRef": 42
+        },
+        {
+          "id": "wrap-009",
+          "name": "Food Service Film Wrap w Cutter 18\"",
+          "description": "18\" x 2000 Feet / 18\" x 3000 Feet",
+          "price": 25.00,
+          "priceAlt": 16.75,
+          "unit": "per roll",
+          "pageRef": 42
+        },
+        {
+          "id": "wrap-010",
+          "name": "Food Service Film Wrap w Cutter 24\"",
+          "description": "24\" x 2000 Feet",
+          "price": 25.00,
+          "unit": "per roll",
+          "pageRef": 42
+        }
+      ]
+    },
+    {
+      "name": "Aluminum Trays & Lids",
+      "nameZh": "加厚方形&圆形外卖锡纸盒&透明塑料盖",
+      "pageRef": [43, 44],
+      "products": [
+        {
+          "id": "alum-001",
+          "name": "#527 - 7\" Round Aluminum Tray",
+          "packing": "500 trays/case",
+          "price": 68.00,
+          "unit": "per case (tray + lid)",
+          "pageRef": 43
+        },
+        {
+          "id": "alum-002",
+          "name": "#705 - 1 LB Oblong Tray",
+          "packing": "1000 trays/case",
+          "price": 108.00,
+          "unit": "per case (tray + lid)",
+          "pageRef": 43
+        },
+        {
+          "id": "alum-003",
+          "name": "#747 - 1 1/2 LB Oblong Aluminum Tray",
+          "packing": "500 trays/case",
+          "price": 83.00,
+          "unit": "per case (tray + lid)",
+          "pageRef": 43
+        },
+        {
+          "id": "alum-004",
+          "name": "#760 - 2 1/4 LB Oblong Aluminum Tray",
+          "packing": "500 trays/case",
+          "price": 113.00,
+          "unit": "per case (tray + lid)",
+          "pageRef": 43
+        },
+        {
+          "id": "alum-005",
+          "name": "#758 - 2 LB Oblong Tray",
+          "packing": "500 trays/case",
+          "price": 108.00,
+          "unit": "per case (tray + lid)",
+          "pageRef": 43
+        },
+        {
+          "id": "alum-006",
+          "name": "#7089 - 1 1/2 LB Oblong Aluminum Tray",
+          "packing": "500 trays/case",
+          "price": 108.00,
+          "unit": "per case (tray + lid)",
+          "pageRef": 43
+        },
+        {
+          "id": "alum-007",
+          "name": "1/2 Steam Table Deep",
+          "packing": "100 pans/case",
+          "price": 48.00,
+          "unit": "per case",
+          "pageRef": 44
+        },
+        {
+          "id": "alum-008",
+          "name": "1/2 Steam Table Medium",
+          "packing": "100 pans/case",
+          "price": 48.00,
+          "unit": "per case",
+          "pageRef": 44
+        },
+        {
+          "id": "alum-009",
+          "name": "1/2 Steam Table Shallow",
+          "packing": "100 pans/case",
+          "price": 48.00,
+          "unit": "per case",
+          "pageRef": 44
+        },
+        {
+          "id": "alum-010",
+          "name": "Full Steam Table Deep",
+          "packing": "50 pans/case",
+          "price": 65.00,
+          "unit": "per case",
+          "pageRef": 44
+        },
+        {
+          "id": "alum-011",
+          "name": "Full Steam Table Medium",
+          "packing": "50 pans/case",
+          "price": 65.00,
+          "unit": "per case",
+          "pageRef": 44
+        },
+        {
+          "id": "alum-012",
+          "name": "Full Steam Table Shallow",
+          "packing": "50 pans/case",
+          "price": 65.00,
+          "unit": "per case",
+          "pageRef": 44
+        },
+        {
+          "id": "alum-013",
+          "name": "1/2 Steam Table Cover/Lid",
+          "packing": "100 lids/case",
+          "price": 28.00,
+          "unit": "per case",
+          "pageRef": 44
+        },
+        {
+          "id": "alum-014",
+          "name": "Full Steam Table Cover/Lid",
+          "packing": "50 lids/case",
+          "price": 38.00,
+          "unit": "per case",
+          "pageRef": 44
+        }
+      ]
+    },
+    {
+      "name": "Foam Containers",
+      "nameZh": "厚款 KARI OUT 泡沫餐盒",
+      "pageRef": [45, 46],
+      "products": [
+        {
+          "id": "foam-001",
+          "name": "224 Foam Container",
+          "description": "5x5x2.63",
+          "packing": "500/case",
+          "pageRef": 45
+        },
+        {
+          "id": "foam-002",
+          "name": "225 Foam Container",
+          "description": "6x6x3.13",
+          "packing": "500/case",
+          "pageRef": 45
+        },
+        {
+          "id": "foam-003",
+          "name": "206 Foam Container",
+          "description": "9.25x6.5x2.25",
+          "packing": "200/case",
+          "pageRef": 45
+        },
+        {
+          "id": "foam-004",
+          "name": "205 Foam Container",
+          "description": "9.25x6.38x2.88",
+          "packing": "200/case",
+          "pageRef": 45
+        },
+        {
+          "id": "foam-005",
+          "name": "22310 Foam Container",
+          "description": "7.63x8.31x2.25",
+          "packing": "200/case",
+          "pageRef": 45
+        },
+        {
+          "id": "foam-006",
+          "name": "288/241 Foam Container",
+          "description": "8x7.5x2.5",
+          "packing": "200/case",
+          "pageRef": 45
+        },
+        {
+          "id": "foam-007",
+          "name": "23100 Foam Container Large 3 Compartment",
+          "packing": "200/case",
+          "pageRef": 45
+        },
+        {
+          "id": "foam-008",
+          "name": "9 IN Foam Plate",
+          "packing": "500/case",
+          "pageRef": 45
+        },
+        {
+          "id": "foam-009",
+          "name": "883 Foam Container 3-compartment",
+          "description": "8x8x3",
+          "packing": "200/case",
+          "pageRef": 46
+        },
+        {
+          "id": "foam-010",
+          "name": "993 Foam Container 5-compartment",
+          "description": "9x9x3",
+          "packing": "200/case",
+          "pageRef": 46
+        },
+        {
+          "id": "foam-011",
+          "name": "883 Foam Container 1-compartment",
+          "description": "8x8x3",
+          "packing": "200/case",
+          "pageRef": 46
+        },
+        {
+          "id": "foam-012",
+          "name": "993 Foam Container 1-compartment",
+          "description": "9x9x3",
+          "packing": "200/case",
+          "pageRef": 46
+        },
+        {
+          "id": "foam-013",
+          "name": "PP 208/241 3-compartment",
+          "description": "8x7.5x2.25",
+          "packing": "150/case",
+          "pageRef": 46
+        },
+        {
+          "id": "foam-014",
+          "name": "PP 225 1-compartment",
+          "description": "6x6x3.13",
+          "packing": "250/case",
+          "pageRef": 46
+        },
+        {
+          "id": "foam-015",
+          "name": "PP 206 1-compartment",
+          "description": "9.25x6.5x2.25",
+          "packing": "150/case",
+          "pageRef": 46
+        },
+        {
+          "id": "foam-016",
+          "name": "PP 883 1-compartment",
+          "description": "8x8x3, Available only in black",
+          "packing": "150/case",
+          "pageRef": 46
+        },
+        {
+          "id": "foam-017",
+          "name": "PP 993 3-compartment",
+          "description": "9x9x3, Available only in black",
+          "packing": "150/case",
+          "pageRef": 46
+        },
+        {
+          "id": "foam-018",
+          "name": "PP 883 Available only in black",
+          "description": "8x8x3",
+          "packing": "150/case",
+          "pageRef": 46
+        },
+        {
+          "id": "foam-019",
+          "name": "PP 993 1-compartment Available only in black",
+          "description": "9x9x3",
+          "packing": "150/case",
+          "pageRef": 46
+        }
+      ]
+    },
+    {
+      "name": "Dry Goods & Spices",
+      "nameZh": "干货及调味粉",
+      "pageRef": [8, 32, 34, 38, 40],
+      "products": [
+        {
+          "id": "dry-001",
+          "name": "Panda Super Potato Starch",
+          "nameZh": "熊猫超级生粉",
+          "size": "bag",
+          "price": 35.50,
+          "unit": "per bag",
+          "deals": ["Buy 3+ bags: $33.50/bag"],
+          "note": "Unlimited supply",
+          "pageRef": 8
+        },
+        {
+          "id": "dry-002",
+          "name": "Tianjin Red Chilies",
+          "nameZh": "辣椒干",
+          "size": "5lb/bag",
+          "price": 16.00,
+          "unit": "per bag",
+          "deals": ["Buy 2 bags: $14/bag"],
+          "pageRef": 32
+        },
+        {
+          "id": "dry-003",
+          "name": "Minced Garlic",
+          "nameZh": "干蒜米粒",
+          "size": "5lb/bag",
+          "price": 16.00,
+          "unit": "per bag",
+          "deals": ["Buy 2 bags: $14/bag"],
+          "pageRef": 32
+        },
+        {
+          "id": "dry-004",
+          "name": "Bread Crumbs",
+          "nameZh": "中国炸鸡粉",
+          "size": "20lb/bag",
+          "price": 22.00,
+          "unit": "per bag",
+          "pageRef": 32
+        },
+        {
+          "id": "dry-005",
+          "name": "Sesame Seeds",
+          "nameZh": "白芝麻",
+          "size": "5lb/bag",
+          "price": 12.00,
+          "unit": "per bag",
+          "pageRef": 32
+        },
+        {
+          "id": "dry-006",
+          "name": "Oolong Tea Bags",
+          "size": "600 bags/case",
+          "price": 13.00,
+          "unit": "per case",
+          "pageRef": 32
+        },
+        {
+          "id": "dry-007",
+          "name": "Potato Starch",
+          "nameZh": "生粉",
+          "size": "20kg/bag",
+          "price": 37.00,
+          "unit": "per bag",
+          "pageRef": 32
+        },
+        {
+          "id": "dry-008",
+          "name": "Pickled Ginger (Pink)",
+          "nameZh": "寿司红姜",
+          "size": "20lb/pail",
+          "price": 23.00,
+          "unit": "per pail",
+          "pageRef": 32
+        },
+        {
+          "id": "dry-009",
+          "name": "Pickled Ginger (Natural)",
+          "nameZh": "寿司白姜",
+          "size": "20lb/pail",
+          "price": 23.00,
+          "unit": "per pail",
+          "pageRef": 32
+        },
+        {
+          "id": "dry-010",
+          "name": "Egg Yellow Shade",
+          "nameZh": "熊猫蛋黄",
+          "size": "12 x 32 FL/case",
+          "price": 20.00,
+          "unit": "per case",
+          "pageRef": 33
+        },
+        {
+          "id": "dry-011",
+          "name": "Tomato Shade",
+          "nameZh": "熊猫红水",
+          "size": "4 x 1 gallon/case",
+          "price": 20.00,
+          "unit": "per case",
+          "pageRef": 33
+        },
+        {
+          "id": "dry-012",
+          "name": "Stainless Steel Scrubbers",
+          "size": "72 pieces/case",
+          "price": 15.00,
+          "unit": "per case",
+          "pageRef": 33
+        },
+        {
+          "id": "dry-013",
+          "name": "Tall Fold Dispenser Napkins",
+          "nameZh": "外卖长纸巾",
+          "size": "8000 sheet/case",
+          "price": 28.00,
+          "unit": "per case",
+          "pageRef": 34
+        },
+        {
+          "id": "dry-014",
+          "name": "Low Fold Dispenser Napkins",
+          "nameZh": "外卖短纸巾",
+          "size": "8000 sheet/case",
+          "price": 28.00,
+          "unit": "per case",
+          "pageRef": 34
+        },
+        {
+          "id": "dry-015",
+          "name": "Mustard Powder",
+          "nameZh": "芥末粉",
+          "size": "25lb/bag",
+          "price": 25.00,
+          "unit": "per bag",
+          "pageRef": 34
+        },
+        {
+          "id": "dry-016",
+          "name": "Peanuts",
+          "nameZh": "花生",
+          "size": "5lb/bag",
+          "price": 13.00,
+          "unit": "per bag",
+          "pageRef": 34
+        },
+        {
+          "id": "dry-017",
+          "name": "Cashew Nut",
+          "nameZh": "腰果",
+          "size": "5lb/bag",
+          "price": 30.00,
+          "unit": "per bag",
+          "deals": ["Buy 3 bags: $28/bag"],
+          "pageRef": 34
+        },
+        {
+          "id": "dry-018",
+          "name": "Dried Star Anise",
+          "nameZh": "八角",
+          "size": "7lb/bag",
+          "price": 10.00,
+          "unit": "per bag",
+          "deals": ["Buy 5 bags: $8/bag"],
+          "pageRef": 34
+        },
+        {
+          "id": "dry-019",
+          "name": "Hammer Brand Baking Soda",
+          "size": "16oz x 24/case",
+          "price": 10.00,
+          "unit": "per case",
+          "pageRef": 38
+        },
+        {
+          "id": "dry-020",
+          "name": "Totole Chicken Seasoning",
+          "nameZh": "太太乐鸡精",
+          "size": "6 x 4.6lb/case",
+          "price": 24.00,
+          "unit": "per case",
+          "pageRef": 38
+        },
+        {
+          "id": "dry-021",
+          "name": "Peanut Kid Brand Peanut Butter",
+          "nameZh": "花生酱",
+          "size": "6/case",
+          "price": 54.00,
+          "unit": "per case",
+          "pageRef": 38
+        },
+        {
+          "id": "dry-022",
+          "name": "Javin Brand Curry Powder",
+          "nameZh": "Javin 牌咖喱粉",
+          "size": "12/case",
+          "price": 71.50,
+          "unit": "per case",
+          "pageRef": 38
+        },
+        {
+          "id": "dry-023",
+          "name": "Self-Rising Flour",
+          "nameZh": "炸鸡自发粉",
+          "size": "25lb/bag",
+          "price": 16.00,
+          "unit": "per bag",
+          "pageRef": 40
+        },
+        {
+          "id": "dry-024",
+          "name": "Aji-no-moto (MSG)",
+          "nameZh": "日本味精",
+          "size": "50lb/bag",
+          "price": 83.00,
+          "unit": "per bag",
+          "pageRef": 40
+        },
+        {
+          "id": "dry-025",
+          "name": "White Pepper",
+          "nameZh": "白胡椒粉",
+          "size": "5lb/jar",
+          "price": 29.00,
+          "unit": "per jar",
+          "pageRef": 40
+        },
+        {
+          "id": "dry-026",
+          "name": "Garlic Powder",
+          "nameZh": "蒜头粉",
+          "size": "5lb/jar",
+          "price": 14.00,
+          "unit": "per jar",
+          "pageRef": 40
+        },
+        {
+          "id": "dry-027",
+          "name": "Dried Star Anise (12oz)",
+          "nameZh": "大红八角",
+          "size": "12oz/bag",
+          "price": 9.75,
+          "unit": "per bag",
+          "deals": ["Buy 3 bags get 1 free"],
+          "pageRef": 40
+        },
+        {
+          "id": "dry-028",
+          "name": "Five Spice Powder",
+          "nameZh": "五香粉",
+          "size": "1lb/bag",
+          "price": 5.00,
+          "unit": "per bag",
+          "pageRef": 40
+        },
+        {
+          "id": "dry-029",
+          "name": "Ginger Powder",
+          "nameZh": "沙姜粉",
+          "size": "1lb/bag",
+          "price": 3.95,
+          "unit": "per bag",
+          "pageRef": 40
+        },
+        {
+          "id": "dry-030",
+          "name": "Black Fungus Strip",
+          "nameZh": "千禧木耳丝",
+          "size": "5lb/bag",
+          "price": 20.00,
+          "unit": "per bag",
+          "pageRef": 40
+        },
+        {
+          "id": "dry-031",
+          "name": "Dried Shiitake Mushrooms",
+          "nameZh": "真空包装干香菇",
+          "size": "5lb/bag",
+          "price": 38.95,
+          "unit": "per bag",
+          "pageRef": 40
+        },
+        {
+          "id": "dry-032",
+          "name": "Mustard Powder",
+          "nameZh": "芥末粉",
+          "size": "25lb/box",
+          "price": null,
+          "unit": "per box",
+          "pageRef": 47
+        }
+      ]
+    },
+    {
+      "name": "Canned Food",
+      "nameZh": "罐头类",
+      "pageRef": [39, 41],
+      "products": [
+        {
+          "id": "can-001",
+          "name": "Whole Small Baby Corn 200up",
+          "nameZh": "整支小玉米",
+          "size": "6 cans/case",
+          "price": 53.00,
+          "unit": "per case",
+          "pageRef": 39
+        },
+        {
+          "id": "can-002",
+          "name": "Whole Small Baby Corn 150up",
+          "nameZh": "整支小玉米",
+          "size": "6 cans/case",
+          "price": 39.95,
+          "unit": "per case",
+          "pageRef": 39
+        },
+        {
+          "id": "can-003",
+          "name": "Mushrooms Sliced",
+          "nameZh": "蘑菇大片",
+          "size": "6 cans/case",
+          "price": 56.00,
+          "unit": "per case",
+          "pageRef": 39
+        },
+        {
+          "id": "can-004",
+          "name": "Pineapple Chunks",
+          "nameZh": "菠萝块",
+          "size": "6 cans/case",
+          "price": 42.00,
+          "unit": "per case",
+          "pageRef": 39
+        },
+        {
+          "id": "can-005",
+          "name": "100% Pineapple Juice",
+          "nameZh": "100% 菠萝汁",
+          "size": "12 cans/case",
+          "price": 42.00,
+          "unit": "per case",
+          "pageRef": 39
+        },
+        {
+          "id": "can-006",
+          "name": "Straw Mushrooms",
+          "nameZh": "去皮鲜草菇",
+          "size": "6 cans/case",
+          "price": 99.00,
+          "unit": "per case",
+          "pageRef": 39
+        },
+        {
+          "id": "can-007",
+          "name": "Pickled Ginger 20lb",
+          "nameZh": "日本寿司白姜",
+          "size": "20lb/bucket",
+          "price": 23.00,
+          "unit": "per bucket",
+          "pageRef": 39
+        },
+        {
+          "id": "can-008",
+          "name": "Canned Baby Corn Cut",
+          "nameZh": "小圆片玉米罐头",
+          "size": "6 cans/case",
+          "price": 28.00,
+          "unit": "per case",
+          "pageRef": 41
+        },
+        {
+          "id": "can-009",
+          "name": "Canned Mushrooms in Brine",
+          "nameZh": "清纯大竹笋罐",
+          "size": "6 cans/case",
+          "price": 56.00,
+          "unit": "per case",
+          "pageRef": 41
+        },
+        {
+          "id": "can-010",
+          "name": "Bamboo Shoot (Strips)",
+          "nameZh": "竹笋丝罐头",
+          "size": "6 cans/case",
+          "price": 27.00,
+          "unit": "per case",
+          "pageRef": 41
+        },
+        {
+          "id": "can-011",
+          "name": "Bamboo Shoot (Sliced)",
+          "nameZh": "笋片罐头",
+          "size": "6 cans/case",
+          "price": 27.00,
+          "unit": "per case",
+          "pageRef": 41
+        },
+        {
+          "id": "can-012",
+          "name": "Water Chestnuts",
+          "nameZh": "清水马蹄罐头",
+          "size": "6 cans/case",
+          "price": 15.00,
+          "unit": "per case",
+          "pageRef": 41
+        },
+        {
+          "id": "can-013",
+          "name": "Longans in Syrup",
+          "nameZh": "龙眼罐头",
+          "size": "24 cans/case",
+          "price": 18.00,
+          "unit": "per case",
+          "pageRef": 41
+        },
+        {
+          "id": "can-014",
+          "name": "Quail Egg",
+          "nameZh": "鹌鹑蛋罐头",
+          "size": "24 cans/case",
+          "price": 24.00,
+          "unit": "per case",
+          "pageRef": 41
+        },
+        {
+          "id": "can-015",
+          "name": "Lychee in Syrup",
+          "nameZh": "荔枝罐头",
+          "size": "24 cans/case",
+          "price": 24.00,
+          "unit": "per case",
+          "pageRef": 41
+        }
+      ]
+    }
+  ]
+}
