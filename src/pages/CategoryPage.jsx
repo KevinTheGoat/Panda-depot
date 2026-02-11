@@ -89,14 +89,9 @@ export default function CategoryPage() {
                     <p className="font-chinese text-panda-gold/35 text-xs mt-1">{product.nameZh}</p>
                   )}
                 </div>
-                {product.price != null && (
-                  <div className="text-right flex-shrink-0">
-                    <span className="text-panda-red font-bold text-xl text-glow-red">${product.price}</span>
-                    {product.unit && (
-                      <p className="text-panda-muted/50 text-[10px]">{product.unit}</p>
-                    )}
-                  </div>
-                )}
+                <Link to="/contact" className="text-panda-red text-xs font-medium flex-shrink-0 hover:underline">
+                  Call to inquire
+                </Link>
               </div>
 
               {product.description && (
@@ -120,17 +115,6 @@ export default function CategoryPage() {
                   </span>
                 ))}
               </div>
-
-              {product.deals && product.deals.length > 0 && (
-                <div className="bg-panda-gold/5 border border-panda-gold/15 rounded-lg p-3 space-y-1">
-                  {product.deals.map((deal, i) => (
-                    <p key={i} className="text-xs text-panda-gold flex items-center gap-1.5">
-                      <Icon icon="mdi:tag" className="text-sm flex-shrink-0" />
-                      {deal}
-                    </p>
-                  ))}
-                </div>
-              )}
 
               {product.note && (
                 <p className="text-xs text-panda-muted/60 italic">{product.note}</p>

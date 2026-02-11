@@ -38,14 +38,14 @@ export default function Footer() {
             <h4 className="font-heading text-xl text-panda-gold mb-4 tracking-wide">CONTACT</h4>
             <p className="font-chinese text-panda-gold/30 text-xs mb-4">联系方式</p>
             <div className="space-y-3 text-sm text-panda-muted">
-              <a href={`tel:${company.phone[0].replace(/-/g, '')}`} className="flex items-center gap-3 hover:text-panda-gold transition-colors">
+              <a href="tel:3053223301" className="flex items-center gap-3 hover:text-panda-gold transition-colors">
                 <Icon icon="mdi:phone" className="text-panda-red" />
-                {company.phone[0]}
+                (305) 322-3301
               </a>
-              <a href={`tel:${company.phone[1].replace(/-/g, '')}`} className="flex items-center gap-3 hover:text-panda-gold transition-colors">
-                <Icon icon="mdi:phone" className="text-panda-red" />
-                {company.phone[1]}
-              </a>
+              <div className="flex items-center gap-3">
+                <Icon icon="mdi:cellphone" className="text-panda-red" />
+                <span>Zelle: (954) 554-8083</span>
+              </div>
               <a href={`mailto:${company.email}`} className="flex items-center gap-3 hover:text-panda-gold transition-colors">
                 <Icon icon="mdi:email-outline" className="text-panda-red" />
                 {company.email}

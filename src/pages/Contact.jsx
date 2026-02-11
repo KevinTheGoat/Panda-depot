@@ -28,12 +28,19 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-semibold text-panda-white mb-1">Phone</h3>
-                <a href={`tel:${company.phone[0].replace(/-/g, '')}`} className="text-panda-muted hover:text-panda-gold transition-colors block">
-                  {company.phone[0]}
+                <a href="tel:3053223301" className="text-panda-muted hover:text-panda-gold transition-colors block">
+                  (305) 322-3301
                 </a>
-                <a href={`tel:${company.phone[1].replace(/-/g, '')}`} className="text-panda-muted hover:text-panda-gold transition-colors block">
-                  {company.phone[1]}
-                </a>
+              </div>
+            </div>
+
+            <div className="glass-card p-6 flex items-start gap-4">
+              <div className="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+                <Icon icon="mdi:cellphone" className="text-lg text-panda-red" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-panda-white mb-1">Zelle</h3>
+                <p className="text-panda-muted">(954) 554-8083</p>
               </div>
             </div>
 

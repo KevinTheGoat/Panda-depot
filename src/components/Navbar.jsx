@@ -61,7 +61,7 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <a href="tel:9545548083" className="btn-primary text-xs gap-2">
+          <a href="tel:3053223301" className="btn-primary text-xs gap-2">
             <Icon icon="mdi:phone" className="text-lg" />
             Call Now
           </a>
@@ -93,9 +93,9 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <a href="tel:9545548083" className="btn-primary text-sm mt-2 w-full justify-center gap-2">
+            <a href="tel:3053223301" className="btn-primary text-sm mt-2 w-full justify-center gap-2">
               <Icon icon="mdi:phone" className="text-lg" />
-              (954) 554-8083
+              (305) 322-3301
             </a>
           </div>
         </div>

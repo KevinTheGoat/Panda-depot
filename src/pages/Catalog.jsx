@@ -35,7 +35,7 @@ export default function Catalog() {
         </div>
         <div className="h-[1px] w-32 bg-gradient-to-r from-panda-red to-panda-red/20 mb-4" />
         <p className="text-[#6B5D4F] mb-2">
-          {allProducts.length} products &middot; Prices valid {catalogData.validPeriod.start} to {catalogData.validPeriod.end}
+          {allProducts.length} products &middot; Call for pricing
         </p>
         <p className="font-chinese text-panda-red/30 text-xs mb-8">
           {catalogData.company.welcomeZh}
@@ -67,11 +67,9 @@ export default function Catalog() {
                     <h3 className="text-sm font-semibold text-panda-white leading-tight">
                       {product.name}
                     </h3>
-                    {product.price != null && (
-                      <span className="text-panda-red font-bold text-lg whitespace-nowrap text-glow-red">
-                        ${product.price}
-                      </span>
-                    )}
+                    <Link to="/contact" className="text-panda-red text-xs font-medium whitespace-nowrap hover:underline">
+                      Call to inquire
+                    </Link>
                   </div>
 
                   {product.nameZh && (
@@ -90,17 +88,6 @@ export default function Catalog() {
                       </span>
                     )}
                   </div>
-
-                  {product.deals && product.deals.length > 0 && (
-                    <div className="mt-2 space-y-1">
-                      {product.deals.map((deal, i) => (
-                        <p key={i} className="text-xs text-panda-gold flex items-center gap-1">
-                          <Icon icon="mdi:tag" className="text-sm flex-shrink-0" />
-                          {deal}
-                        </p>
-                      ))}
-                    </div>
-                  )}
 
                   <Link
                     to={`/catalog/${slugify(product.category)}`}
@@ -145,11 +132,9 @@ export default function Catalog() {
                         <h3 className="text-sm font-semibold text-panda-white leading-tight">
                           {product.name}
                         </h3>
-                        {product.price != null && (
-                          <span className="text-panda-red font-bold text-lg whitespace-nowrap text-glow-red">
-                            ${product.price}
-                          </span>
-                        )}
+                        <Link to="/contact" className="text-panda-red text-xs font-medium whitespace-nowrap hover:underline">
+                          Call to inquire
+                        </Link>
                       </div>
                       {product.nameZh && (
                         <p className="font-chinese text-panda-gold/35 text-xs">{product.nameZh}</p>

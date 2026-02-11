@@ -100,9 +100,9 @@ export default function Home() {
               <Icon icon="mdi:storefront" className="text-lg" />
               Browse Catalog
             </Link>
-            <a href="tel:9545548083" className="btn-secondary gap-2">
+            <a href="tel:3053223301" className="btn-secondary gap-2">
               <Icon icon="mdi:phone" className="text-lg" />
-              (954) 554-8083
+              (305) 322-3301
             </a>
           </div>
 
