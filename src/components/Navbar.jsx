@@ -41,7 +41,7 @@ export default function Navbar() {
             <img src={pandaLogo} alt="Panda Depot" className="h-9 md:h-12 w-auto" />
           </div>
           <div className="hidden sm:block">
-            <span className="font-heading text-panda-white text-lg md:text-xl tracking-wide leading-none">PANDA DEPOT</span>
+            <span className="font-heading text-panda-white text-lg md:text-xl tracking-wide leading-none">PANDA DEPOT INC</span>
             <span className="block font-chinese text-panda-gold/50 text-[10px]">熊猫得宝</span>
           </div>
         </Link>

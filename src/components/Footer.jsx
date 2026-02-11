@@ -20,7 +20,7 @@ export default function Footer() {
                 <img src={pandaLogo} alt="Panda Depot" className="h-12 w-auto" />
               </div>
               <div>
-                <span className="font-heading text-panda-white text-xl tracking-wide leading-none block">PANDA DEPOT</span>
+                <span className="font-heading text-panda-white text-xl tracking-wide leading-none block">PANDA DEPOT INC</span>
                 <span className="font-chinese text-panda-gold/40 text-xs">熊猫得宝有限公司</span>
               </div>
             </div>
