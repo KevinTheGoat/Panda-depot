@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
-import { useGsapStagger } from '../hooks/useGsap'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 import catalogData from '../data/catalog.json'
 
 function slugify(name) {
@@ -10,7 +10,7 @@ function slugify(name) {
 
 export default function Catalog() {
   const [search, setSearch] = useState('')
-  const gridRef = useGsapStagger({ stagger: 0.03 })
+  const gridRef = useScrollReveal({ stagger: 30 })
 
   const allProducts = catalogData.categories.flatMap((cat) =>
     cat.products.map((p) => ({ ...p, category: cat.name, categoryZh: cat.nameZh }))

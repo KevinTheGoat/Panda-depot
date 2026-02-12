@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
-import { useGsapStagger } from '../hooks/useGsap'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 import catalogData from '../data/catalog.json'
 
 function slugify(name) {
@@ -11,7 +11,7 @@ function slugify(name) {
 export default function CategoryPage() {
   const { categorySlug } = useParams()
   const [search, setSearch] = useState('')
-  const gridRef = useGsapStagger({ stagger: 0.05 })
+  const gridRef = useScrollReveal({ stagger: 40 })
 
   const category = catalogData.categories.find(
     (c) => slugify(c.name) === categorySlug

@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
-import { useGsapFadeIn, useGsapStagger } from '../hooks/useGsap'
+import { useGsapFadeIn } from '../hooks/useGsap'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 import catalogData from '../data/catalog.json'
 import pandaLogo from '../assets/images/Panda Logo.svg'
 import pandaBrand from '../assets/images/Panda Brand.svg'
@@ -51,7 +52,7 @@ function slugify(name) {
 
 export default function Home() {
   const heroRef = useGsapFadeIn({ y: 60, duration: 1 })
-  const gridRef = useGsapStagger({ stagger: 0.05 })
+  const gridRef = useScrollReveal({ stagger: 50 })
 
   return (
     <>

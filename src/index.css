@@ -258,4 +258,17 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Scroll reveal — initial hidden state */
+  [data-animate] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  /* Revealed state — added by IntersectionObserver */
+  [data-animate].reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
