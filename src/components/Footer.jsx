@@ -14,8 +14,8 @@ export default function Footer() {
       {/* Gold accent line */}
       <div className="h-[1px] bg-gradient-to-r from-transparent via-panda-gold/30 to-transparent" />
 
-      <div className="container-custom py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="container-custom py-10 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-panda-red/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-panda-red/10 mt-8 md:mt-12 pt-6 md:pt-8 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
           <div className="flex items-center gap-3">
             <p className="text-panda-muted/50 text-xs">
               &copy; {new Date().getFullYear()} Panda Depot Inc. All rights reserved.
@@ -102,7 +102,7 @@ export default function Footer() {
 
       {/* Site Credit */}
       <div className="border-t border-panda-red/10 bg-[#0A0806]">
-        <div className="container-custom py-4">
+        <div className="container-custom py-3">
           <p className="text-xs text-panda-muted/40 text-center">
             Website designed & developed by{' '}
             <a
@@ -111,7 +111,9 @@ export default function Footer() {
             >
               Kevin Moreau
             </a>
-            {' '}&mdash; Want a site like this?{' '}
+          </p>
+          <p className="text-xs text-panda-muted/40 text-center mt-1">
+            Want a site like this?{' '}
             <a
               href="mailto:kevinmoreau@kevco.co"
               className="text-panda-gold/60 hover:text-panda-gold transition-colors duration-300"

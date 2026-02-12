@@ -18,8 +18,6 @@ function InlineBrand({ className, id }) {
     if (!svg) return
     svg.removeAttribute('width')
     svg.removeAttribute('height')
-    svg.style.width = '100%'
-    svg.style.height = 'auto'
   }, [])
   return <div id={id} ref={ref} className={className} dangerouslySetInnerHTML={{ __html: taggedBrand }} />
 }
@@ -64,53 +62,53 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(238,28,37,0.12)_0%,_transparent_70%)]" />
         <div className="absolute inset-0 lattice-bg" />
 
-        {/* Floating lanterns */}
+        {/* Floating lanterns — fewer on mobile */}
         <div className="absolute top-20 left-[5%] animate-lantern-sway opacity-50">
           <div className="lantern" />
         </div>
-        <div className="absolute top-28 left-[18%] animate-lantern-sway opacity-35" style={{ animationDelay: '0.7s' }}>
+        <div className="hidden md:block absolute top-28 left-[18%] animate-lantern-sway opacity-35" style={{ animationDelay: '0.7s' }}>
           <div className="lantern" style={{ width: 22, height: 28 }} />
         </div>
-        <div className="absolute top-16 left-[35%] animate-lantern-sway opacity-25" style={{ animationDelay: '1.4s' }}>
+        <div className="hidden md:block absolute top-16 left-[35%] animate-lantern-sway opacity-25" style={{ animationDelay: '1.4s' }}>
           <div className="lantern" style={{ width: 18, height: 24 }} />
         </div>
-        <div className="absolute top-24 left-[50%] animate-lantern-sway opacity-20" style={{ animationDelay: '0.3s' }}>
+        <div className="hidden md:block absolute top-24 left-[50%] animate-lantern-sway opacity-20" style={{ animationDelay: '0.3s' }}>
           <div className="lantern" style={{ width: 16, height: 20 }} />
         </div>
-        <div className="absolute top-18 right-[30%] animate-lantern-sway opacity-30" style={{ animationDelay: '1.8s' }}>
+        <div className="hidden md:block absolute top-18 right-[30%] animate-lantern-sway opacity-30" style={{ animationDelay: '1.8s' }}>
           <div className="lantern" style={{ width: 20, height: 26 }} />
         </div>
         <div className="absolute top-32 right-[15%] animate-lantern-sway opacity-40" style={{ animationDelay: '1s' }}>
           <div className="lantern" />
         </div>
-        <div className="absolute top-22 right-[3%] animate-lantern-sway opacity-45" style={{ animationDelay: '0.5s' }}>
+        <div className="hidden md:block absolute top-22 right-[3%] animate-lantern-sway opacity-45" style={{ animationDelay: '0.5s' }}>
           <div className="lantern" style={{ width: 24, height: 32 }} />
         </div>
 
         {/* Gold corner ornaments on the hero container */}
-        <div ref={heroRef} className="container-custom relative z-10 text-center pt-20">
+        <div ref={heroRef} className="container-custom relative z-10 text-center pt-24 md:pt-20">
           {/* Chinese decorative top element */}
-          <div className="flex items-center justify-center gap-4 mb-8">
+          <div className="hidden md:flex items-center justify-center gap-4 mb-8">
             <div className="h-[1px] w-16 bg-gradient-to-r from-transparent to-panda-red/30" />
             <span className="font-chinese text-panda-red/40 text-lg">批发餐厅用品</span>
             <div className="h-[1px] w-16 bg-gradient-to-l from-transparent to-panda-red/30" />
           </div>
 
-          <p className="text-panda-red font-medium uppercase tracking-[0.3em] text-sm mb-6 text-glow-red">
+          <p className="text-panda-red font-medium uppercase tracking-[0.2em] md:tracking-[0.3em] text-xs md:text-sm mb-4 md:mb-6 text-glow-red">
             Wholesale Restaurant Supplies
           </p>
 
-          <div className="inline-block bg-panda-cream rounded-2xl p-4 md:p-6 mb-6 shadow-[0_0_40px_rgba(238,28,37,0.15)]">
-            <InlineBrand id="home-brand" className="h-40 md:h-56 lg:h-72 w-auto" />
+          <div className="inline-block bg-panda-cream rounded-xl md:rounded-2xl p-3 md:p-6 mb-4 md:mb-6 shadow-[0_0_40px_rgba(238,28,37,0.15)]">
+            <InlineBrand id="home-brand" className="[&_svg]:h-28 [&_svg]:md:h-56 [&_svg]:lg:h-72 [&_svg]:w-auto" />
           </div>
 
-          <p className="text-[#6B5D4F] text-lg md:text-xl max-w-2xl mx-auto mb-4">
+          <p className="text-[#6B5D4F] text-base md:text-xl max-w-2xl mx-auto mb-2 md:mb-4 px-4 md:px-0">
             Containers, packaging, groceries &amp; more for restaurants across South Florida.
           </p>
-          <p className="text-[#6B5D4F]/80 text-sm mb-2">
+          <p className="text-[#6B5D4F]/80 text-xs md:text-sm mb-1 md:mb-2">
             {catalogData.company.tagline}
           </p>
-          <p className="font-chinese text-panda-red/30 text-xs mb-10">
+          <p className="font-chinese text-panda-red/30 text-[10px] md:text-xs mb-6 md:mb-10">
             {catalogData.company.taglineZh}
           </p>
 
