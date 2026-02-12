@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Catalog from './pages/Catalog'
 import CategoryPage from './pages/CategoryPage'
 import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 import SplashScreen from './components/SplashScreen'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/catalog" element={<Catalog />} />
             <Route path="/catalog/:categorySlug" element={<CategoryPage />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

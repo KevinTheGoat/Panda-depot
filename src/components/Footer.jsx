@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import catalogData from '../data/catalog.json'
 import pandaLogo from '../assets/images/Panda Logo.svg'
+import logoSvgRaw from '../assets/images/Panda Logo.svg?raw'
+
+const inlineLogo = logoSvgRaw.replace(/style="fill:#ffffff"/g, 'style="fill:#FFF8F0"')
 
 const { company } = catalogData
 
@@ -16,9 +19,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="bg-panda-cream rounded-lg p-2">
-                <img src={pandaLogo} alt="Panda Depot" className="h-12 w-auto" />
-              </div>
+              <div className="bg-panda-cream rounded-lg p-2 [&_svg]:h-12 [&_svg]:w-auto" dangerouslySetInnerHTML={{ __html: inlineLogo }} />
               <div>
                 <span className="font-heading text-panda-white text-xl tracking-wide leading-none block">PANDA DEPOT INC</span>
                 <span className="font-chinese text-panda-gold/40 text-xs">熊猫得宝有限公司</span>
@@ -96,6 +97,28 @@ export default function Footer() {
             <Link to="/catalog" className="text-panda-muted/50 text-xs hover:text-panda-gold transition-colors">Catalog</Link>
             <Link to="/contact" className="text-panda-muted/50 text-xs hover:text-panda-gold transition-colors">Contact</Link>
           </div>
+        </div>
+      </div>
+
+      {/* Site Credit */}
+      <div className="border-t border-panda-red/10 bg-[#0A0806]">
+        <div className="container-custom py-4">
+          <p className="text-xs text-panda-muted/40 text-center">
+            Website designed & developed by{' '}
+            <a
+              href="mailto:kevinmoreau@kevco.co"
+              className="text-panda-gold/60 hover:text-panda-gold transition-colors duration-300"
+            >
+              Kevin Moreau
+            </a>
+            {' '}&mdash; Want a site like this?{' '}
+            <a
+              href="mailto:kevinmoreau@kevco.co"
+              className="text-panda-gold/60 hover:text-panda-gold transition-colors duration-300"
+            >
+              kevinmoreau@kevco.co
+            </a>
+          </p>
         </div>
       </div>
     </footer>

@@ -1,9 +1,28 @@
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import { useGsapFadeIn, useGsapStagger } from '../hooks/useGsap'
 import catalogData from '../data/catalog.json'
 import pandaLogo from '../assets/images/Panda Logo.svg'
 import pandaBrand from '../assets/images/Panda Brand.svg'
+import brandSvgRaw from '../assets/images/Panda Brand.svg?raw'
+
+// Inlines the Brand SVG and swaps white fills to match parent background
+const taggedBrand = brandSvgRaw
+  .replace(/style="fill:#ffffff"/g, 'style="fill:#FFF8F0" data-fill="white"')
+
+function InlineBrand({ className, id }) {
+  const ref = useRef(null)
+  useEffect(() => {
+    const svg = ref.current?.querySelector('svg')
+    if (!svg) return
+    svg.removeAttribute('width')
+    svg.removeAttribute('height')
+    svg.style.width = '100%'
+    svg.style.height = 'auto'
+  }, [])
+  return <div id={id} ref={ref} className={className} dangerouslySetInnerHTML={{ __html: taggedBrand }} />
+}
 
 const categoryIcons = {
   'Rice & Grains': 'mdi:rice',
@@ -82,7 +101,7 @@ export default function Home() {
           </p>
 
           <div className="inline-block bg-panda-cream rounded-2xl p-4 md:p-6 mb-6 shadow-[0_0_40px_rgba(238,28,37,0.15)]">
-            <img src={pandaBrand} alt="Panda Depot" className="h-40 md:h-56 lg:h-72 w-auto" />
+            <InlineBrand id="home-brand" className="h-40 md:h-56 lg:h-72 w-auto" />
           </div>
 
           <p className="text-[#6B5D4F] text-lg md:text-xl max-w-2xl mx-auto mb-4">

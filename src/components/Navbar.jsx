@@ -1,7 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import pandaLogo from '../assets/images/Panda Logo.svg'
+import logoSvgRaw from '../assets/images/Panda Logo.svg?raw'
+
+const inlineLogo = logoSvgRaw.replace(/style="fill:#ffffff"/g, 'style="fill:#FFF8F0"')
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -37,9 +40,7 @@ export default function Navbar() {
 
       <div className="container-custom flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-3">
-          <div className="bg-panda-cream rounded-lg p-1">
-            <img src={pandaLogo} alt="Panda Depot" className="h-9 md:h-12 w-auto" />
-          </div>
+          <div id="nav-logo" className="bg-panda-cream rounded-lg p-1 [&_svg]:h-9 [&_svg]:md:h-12 [&_svg]:w-auto" dangerouslySetInnerHTML={{ __html: inlineLogo }} />
           <div className="hidden sm:block">
             <span className="font-heading text-panda-white text-lg md:text-xl tracking-wide leading-none">PANDA DEPOT INC</span>
             <span className="block font-chinese text-panda-gold/50 text-[10px]">熊猫得宝</span>
