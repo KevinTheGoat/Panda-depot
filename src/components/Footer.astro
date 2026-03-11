@@ -1,0 +1,127 @@
+---
+import catalogData from '../data/catalog.json'
+import logoSvgRaw from '../assets/images/Panda Logo.svg?raw'
+
+const inlineLogo = logoSvgRaw.replace(/style="fill:#ffffff"/g, 'style="fill:#FFF8F0"')
+const { company } = catalogData
+const year = new Date().getFullYear()
+---
+
+<footer class="relative bg-panda-dark border-t border-panda-red/15">
+  <!-- Gold accent line -->
+  <div class="h-[1px] bg-gradient-to-r from-transparent via-panda-gold/30 to-transparent"></div>
+
+  <div class="container-custom py-10 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="bg-panda-cream rounded-lg p-2 [&_svg]:h-12 [&_svg]:w-auto" set:html={inlineLogo} />
+          <div>
+            <span class="font-heading text-panda-white text-xl tracking-wide leading-none block">PANDA DEPOT INC</span>
+            <span class="font-chinese text-panda-gold/40 text-xs">熊猫得宝有限公司</span>
+          </div>
+        </div>
+        <p class="text-panda-muted text-sm leading-relaxed">
+          {company.description}
+        </p>
+        <p class="font-chinese text-panda-muted/40 text-xs mt-1">{company.descriptionZh}</p>
+        <p class="text-panda-muted/60 text-xs mt-3 italic leading-relaxed">
+          {company.motto}
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-heading text-xl text-panda-gold mb-4 tracking-wide">CONTACT</h4>
+        <p class="font-chinese text-panda-gold/30 text-xs mb-4">联系方式</p>
+        <div class="space-y-3 text-sm text-panda-muted">
+          <a href="tel:3053223301" class="flex items-center gap-3 hover:text-panda-gold transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#EE1C25" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+            (305) 322-3301
+          </a>
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#EE1C25" d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99M17 19H7V5h10z"/></svg>
+            <span>Zelle: (954) 554-8083</span>
+          </div>
+          <a href={`mailto:${company.email}`} class="flex items-center gap-3 hover:text-panda-gold transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#EE1C25" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg>
+            {company.email}
+          </a>
+          <div class="flex items-start gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="mt-0.5"><path fill="#EE1C25" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"/></svg>
+            <span>{company.address}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hours -->
+      <div>
+        <h4 class="font-heading text-xl text-panda-gold mb-4 tracking-wide">HOURS</h4>
+        <p class="font-chinese text-panda-gold/30 text-xs mb-4">营业时间</p>
+        <div class="space-y-3 text-sm text-panda-muted">
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#EE1C25" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2M12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8s-3.58 8-8 8m.5-13H11v6l5.25 3.15l.75-1.23l-4.5-2.67z"/></svg>
+            <div>
+              <p class="text-panda-white font-medium">Opening</p>
+              <p>{company.openingTime}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#EE1C25" d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5M20 11l-3-3h-4v6H3V6h14v5m-2 5.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5"/></svg>
+            <div>
+              <p class="text-panda-white font-medium">Delivery</p>
+              <p>{company.deliveryTime}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 pt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#EE1C25" d="M9.5 4C5.36 4 2 6.69 2 10c0 1.89 1.08 3.56 2.78 4.66L4 17l2.5-1.18C7.61 16.27 8.53 16.5 9.5 16.5c.96 0 1.88-.14 2.72-.4A5.73 5.73 0 0 1 12 14.5c0-3.04 2.69-5.5 6-5.5c.34 0 .67.03 1 .08C18.27 5.81 14.28 4 9.5 4m-1.75 3.75a.88.88 0 1 1 0 1.75a.88.88 0 0 1 0-1.75m3.5 0a.88.88 0 1 1 0 1.75a.88.88 0 0 1 0-1.75M18 10.5c-2.79 0-5 1.96-5 4.38s2.21 4.37 5 4.37c.73 0 1.42-.12 2.06-.36L22 20l-.57-1.78C22.41 17.27 23 16.11 23 14.88c0-2.42-2.21-4.38-5-4.38m-1.25 2.75a.72.72 0 1 1 0 1.44a.72.72 0 0 1 0-1.44m2.5 0a.72.72 0 1 1 0 1.44a.72.72 0 0 1 0-1.44"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#EE1C25" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51c-.173-.008-.371-.01-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214l-3.741.982l.998-3.648l-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            <span class="text-xs text-panda-muted/60">WeChat & WhatsApp available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-panda-red/10 mt-8 md:mt-12 pt-6 md:pt-8 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
+      <div class="flex items-center gap-3">
+        <p class="text-panda-muted/50 text-xs">
+          &copy; {year} Panda Depot Inc. All rights reserved.
+        </p>
+        <span class="font-chinese text-panda-gold/20 text-xs">熊猫得宝有限公司</span>
+      </div>
+      <div class="flex gap-6">
+        <a href="/catalog" class="text-panda-muted/50 text-xs hover:text-panda-gold transition-colors">Catalog</a>
+        <a href="/contact" class="text-panda-muted/50 text-xs hover:text-panda-gold transition-colors">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Credit -->
+  <div class="border-t border-panda-red/10 bg-[#0A0806]">
+    <div class="container-custom py-3">
+      <p class="text-xs text-panda-muted/40 text-center">
+        Website designed & developed by{' '}
+        <a
+          href="https://kevco.co"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-panda-gold/60 hover:text-panda-gold transition-colors duration-300"
+        >
+          KevCo
+        </a>
+      </p>
+      <p class="text-xs text-panda-muted/40 text-center mt-1">
+        Want a site like this?{' '}
+        <a
+          href="https://kevco.co/contact"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-panda-gold/60 hover:text-panda-gold transition-colors duration-300"
+        >
+          kevco.co
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>

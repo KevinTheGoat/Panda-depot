@@ -1,0 +1,30 @@
+---
+import '../styles/global.css'
+import Navbar from '../components/Navbar.jsx'
+import Footer from '../components/Footer.astro'
+import SplashWrapper from '../components/SplashWrapper.jsx'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Panda Depot Inc - Wholesale Restaurant Containers & Packaging Supplies. Serving South Florida restaurants with fair prices and fast delivery." />
+    <title>Panda Depot Inc | Wholesale Restaurant Supplies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@700&family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <SplashWrapper client:load />
+    <div class="min-h-screen flex flex-col">
+      <Navbar client:load />
+      <main class="flex-1">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

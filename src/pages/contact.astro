@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import catalogData from '../data/catalog.json'
+
+const { company } = catalogData
+---
+
+<BaseLayout>
+  <section class="pt-28 pb-20">
+    <div class="container-custom" data-animate>
+      <div class="flex items-end gap-4 mb-2">
+        <h1 class="font-heading text-display-lg">GET IN TOUCH</h1>
+        <span class="font-chinese text-panda-red/40 text-2xl pb-1">联系我们</span>
+      </div>
+      <div class="h-[1px] w-32 bg-gradient-to-r from-panda-red to-panda-red/20 mb-4"></div>
+      <p class="text-[#6B5D4F] mb-12 max-w-lg">
+        We deliver to restaurants across South Florida. Call, text, or visit our warehouse in Hialeah.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Info cards -->
+        <div class="space-y-4">
+          <div class="glass-card p-6 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#EE1C25" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-panda-white mb-1">Phone</h3>
+              <a href="tel:3053223301" class="text-panda-muted hover:text-panda-gold transition-colors block">
+                (305) 322-3301
+              </a>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#EE1C25" d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99M17 19H7V5h10z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-panda-white mb-1">Zelle</h3>
+              <p class="text-panda-muted">(954) 554-8083</p>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#EE1C25" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-panda-white mb-1">Email</h3>
+              <a href={`mailto:${company.email}`} class="text-panda-muted hover:text-panda-gold transition-colors">
+                {company.email}
+              </a>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#EE1C25" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-panda-white mb-1">Location</h3>
+              <p class="text-panda-muted">{company.address}</p>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#EE1C25" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2M12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8s-3.58 8-8 8m.5-13H11v6l5.25 3.15l.75-1.23l-4.5-2.67z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-panda-white mb-1">Hours</h3>
+              <p class="text-panda-muted text-sm">{company.openingTime}</p>
+              <p class="text-panda-muted/60 text-xs mt-1">Delivery: {company.deliveryTime}</p>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-panda-red/10 border border-panda-red/20 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#EE1C25" d="M9.5 4C5.36 4 2 6.69 2 10c0 1.89 1.08 3.56 2.78 4.66L4 17l2.5-1.18C7.61 16.27 8.53 16.5 9.5 16.5c.96 0 1.88-.14 2.72-.4A5.73 5.73 0 0 1 12 14.5c0-3.04 2.69-5.5 6-5.5c.34 0 .67.03 1 .08C18.27 5.81 14.28 4 9.5 4m-1.75 3.75a.88.88 0 1 1 0 1.75a.88.88 0 0 1 0-1.75m3.5 0a.88.88 0 1 1 0 1.75a.88.88 0 0 1 0-1.75M18 10.5c-2.79 0-5 1.96-5 4.38s2.21 4.37 5 4.37c.73 0 1.42-.12 2.06-.36L22 20l-.57-1.78C22.41 17.27 23 16.11 23 14.88c0-2.42-2.21-4.38-5-4.38m-1.25 2.75a.72.72 0 1 1 0 1.44a.72.72 0 0 1 0-1.44m2.5 0a.72.72 0 1 1 0 1.44a.72.72 0 0 1 0-1.44"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-panda-white mb-1">WeChat / WhatsApp</h3>
+              <p class="text-panda-muted text-sm">{company.wechat}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map embed -->
+        <div class="glass-card overflow-hidden h-[400px] md:h-auto">
+          <iframe
+            title="Panda Depot Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.5!2d-80.27!3d25.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQ5JzEyLjAiTiA4MMKwMTYnMTIuMCJX!5e0!3m2!1sen!2sus!4v1"
+            width="100%"
+            height="100%"
+            style="border: 0; min-height: 400px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-visible')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { rootMargin: '0px 0px -60px 0px', threshold: 0.05 }
+    )
+    document.querySelectorAll('[data-animate]').forEach((el) => observer.observe(el))
+  </script>
+</BaseLayout>

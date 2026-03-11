@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import CategorySearch from '../../components/CategorySearch.jsx'
+import catalogData from '../../data/catalog.json'
+
+export function getStaticPaths() {
+  function slugify(name) {
+    return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+  }
+  return catalogData.categories.map((cat) => ({
+    params: { categorySlug: slugify(cat.name) },
+    props: { category: cat },
+  }))
+}
+
+const { category } = Astro.props
+---
+
+<BaseLayout>
+  <section class="pt-24 pb-16">
+    <div class="container-custom">
+      <a href="/catalog" class="inline-flex items-center gap-1 text-[#6B5D4F] text-sm mb-6 hover:text-panda-red transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20z"/></svg>
+        All Categories
+      </a>
+
+      <div class="flex items-end gap-4 mb-1">
+        <h1 class="font-heading text-display-lg">{category.name.toUpperCase()}</h1>
+      </div>
+      {category.nameZh && (
+        <p class="font-chinese text-panda-red/40 text-lg mb-2">{category.nameZh}</p>
+      )}
+      <div class="h-[1px] w-24 bg-gradient-to-r from-panda-red to-panda-red/20 mb-4"></div>
+      <p class="text-[#6B5D4F] text-sm mb-4">
+        {category.products.length} products
+        {category.note && <span class="block mt-1 text-panda-red text-xs">{category.note}</span>}
+      </p>
+
+      <CategorySearch client:load category={category} />
+    </div>
+  </section>
+</BaseLayout>

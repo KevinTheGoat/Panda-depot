@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import CatalogSearch from '../../components/CatalogSearch.jsx'
+import catalogData from '../../data/catalog.json'
+
+function slugify(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+}
+
+const allProducts = catalogData.categories.flatMap((cat) =>
+  cat.products.map((p) => ({ ...p, category: cat.name, categoryZh: cat.nameZh }))
+)
+---
+
+<BaseLayout>
+  <section class="pt-24 pb-16">
+    <div class="container-custom">
+      <!-- Header -->
+      <div class="flex items-end gap-4 mb-2">
+        <h1 class="font-heading text-display-lg">FULL CATALOG</h1>
+        <span class="font-chinese text-panda-red/40 text-2xl pb-1">完整目录</span>
+      </div>
+      <div class="h-[1px] w-32 bg-gradient-to-r from-panda-red to-panda-red/20 mb-4"></div>
+      <p class="text-[#6B5D4F] mb-2">
+        {allProducts.length} products &middot; Call for pricing
+      </p>
+      <p class="font-chinese text-panda-red/30 text-xs mb-8">
+        {catalogData.company.welcomeZh}
+      </p>
+
+      <CatalogSearch client:load allProducts={allProducts} categories={catalogData.categories} />
+    </div>
+  </section>
+</BaseLayout>
